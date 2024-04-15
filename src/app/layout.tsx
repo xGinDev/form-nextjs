@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen`}>
         <main className="flex flex-col justify-between min-h-screen">
           <Header />
-          <div className="p-4 xl:max-w-screen-xl">
+          <div className="p-4 xl:max-w-screen-xl m-auto w-full">
             {children}
           </div>
           <Footer />
