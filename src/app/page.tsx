@@ -36,9 +36,6 @@ export default function Component() {
               Prefix
             </Label>
             <Select
-              className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 w-full"
-              id="prefix"
-              required
             >
               <SelectTrigger>
                 <SelectValue placeholder="Select a prefix" />
