@@ -24,10 +24,6 @@ export default function Form() {
 
     const data = useStoreData()
 
-    if (!data) {
-        return <div>Loading...</div>;
-    }
-
     return (
         <div key="1" className="border-1 dark:border-gray-300 p-8 rounded-md shadow-md space-y-8 relative">
             <div className="space-y-2">
