@@ -25,7 +25,7 @@ export default function Form() {
             <div className="space-y-2">
                 <h2 className="text-3xl font-bold">Creación de cliente PuraCarnes Hogar</h2>
             </div>
-            <form action="">
+            <form action="" className={'flex flex-col justify-between'}>
                 <div className="space-y-4">
                     <div className="flex justify-center items-center">
                         <RadioGroup defaultValue="comfortable" className={'flex'}>
@@ -87,7 +87,7 @@ export default function Form() {
                         Contiuar
                     </Button>
                 </div>
-                <div className="flex justify-between items-center absolute bottom-4 w-[90%]">
+                <div className="flex justify-between items-center mt-4">
                     <div className="flex flex-col">
                         <p>ID Sitio: 0</p>
                         <p>ID Canal: 1</p>
