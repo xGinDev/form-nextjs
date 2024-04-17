@@ -14,7 +14,7 @@ import Form from "@/components/home/Form";
 export default function Home() {
   return (
     <>
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center justify-center">
         <Img/>
         <Form/>
       </div>

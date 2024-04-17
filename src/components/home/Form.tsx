@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/0EyGBV5aW7U
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
+'use client'
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import {
@@ -11,19 +12,26 @@ import {
     SelectItem,
     SelectGroup,
     SelectContent,
-    Select,
-    SelectLabel
+    Select
 } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from "@/components/ui/button"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import Image from "next/image";
+import { useStoreData } from '@/hooks/data'
 
 export default function Form() {
+
+    const data = useStoreData()
+
+    if (!data) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <div key="1" className="border-1 dark:border-gray-300 p-8 rounded-md shadow-md space-y-8 relative">
             <div className="space-y-2">
-                <h2 className="text-3xl font-bold">Creación de cliente PuraCarnes Hogar</h2>
+                <h2 className="text-3xl font-bold">Creación de cliente {data?.portalTittle}</h2>
             </div>
             <form action="" className={'flex flex-col justify-between'}>
                 <div className="space-y-4">
@@ -78,7 +86,7 @@ export default function Form() {
                         <Checkbox className="text-gray-600 dark:text-gray-400" id="agreement" required/>
                         <Label className="text-sm font-normal text-gray-600 dark:text-gray-400" htmlFor="agreement">
                             Autorizo el tratamiento de mis datos personales registrados en este portal con las siguientes
-                            <a className="underline underline-offset-2 text-gray-600 dark:text-gray-400">
+                            <a href={data?.dataProtectionPolicy} target={'_blank'} className="underline underline-offset-2 text-gray-600 dark:text-gray-400">
                                 {' '} condiciones
                             </a>
                         </Label>
@@ -89,8 +97,8 @@ export default function Form() {
                 </div>
                 <div className="flex justify-between items-center mt-4">
                     <div className="flex flex-col">
-                        <p>ID Sitio: 0</p>
-                        <p>ID Canal: 1</p>
+                        <p>ID Sitio: {data?.idSite}</p>
+                        <p>ID Canal: {data?.idChannel}</p>
                     </div>
                     <div className="">
                         <Image src={'https://dummyimage.com/30x30'} width={30} height={30} alt={'Country'}/>
