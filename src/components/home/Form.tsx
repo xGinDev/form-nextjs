@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import Image from "next/image";
 import { useStoreData } from '@/hooks/data'
+import { Suspense } from 'react'
 
 export default function Form() {
 
