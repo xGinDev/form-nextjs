@@ -49,16 +49,16 @@ export default function Form() {
                             </SelectTrigger>
                             <SelectContent>
                                 <SelectGroup>
-                                    <SelectItem value="apple">Cédula de ciudadanía</SelectItem>
-                                    <SelectItem value="banana">Cedula de extranjería</SelectItem>
-                                    <SelectItem value="blueberry">NIT</SelectItem>
-                                    <SelectItem value="grapes">Tarjeta de extranjería</SelectItem>
-                                    <SelectItem value="pineapple">Registro Civil</SelectItem>
-                                    <SelectItem value="pineapple">Tarjeta de identidad</SelectItem>
-                                    <SelectItem value="pineapple">Pasaporte</SelectItem>
-                                    <SelectItem value="pineapple">Documento de identificación extranjero</SelectItem>
-                                    <SelectItem value="pineapple">Nit de otro país</SelectItem>
-                                    <SelectItem value="pineapple">NUIP</SelectItem>
+                                    <SelectItem value="Cédula de ciudadanía">Cédula de ciudadanía</SelectItem>
+                                    <SelectItem value="Cedula de extranjería">Cedula de extranjería</SelectItem>
+                                    <SelectItem value="NIT">NIT</SelectItem>
+                                    <SelectItem value="Tarjeta de extranjería">Tarjeta de extranjería</SelectItem>
+                                    <SelectItem value="Registro Civil">Registro Civil</SelectItem>
+                                    <SelectItem value="Tarjeta de identidad">Tarjeta de identidad</SelectItem>
+                                    <SelectItem value="Pasaporte">Pasaporte</SelectItem>
+                                    <SelectItem value="Documento de identificación extranjero">Documento de identificación extranjero</SelectItem>
+                                    <SelectItem value="Nit de otro país">Nit de otro país</SelectItem>
+                                    <SelectItem value="NUIP">NUIP</SelectItem>
                                 </SelectGroup>
                             </SelectContent>
                         </Select>
