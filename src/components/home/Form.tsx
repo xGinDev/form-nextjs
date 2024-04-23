@@ -46,14 +46,14 @@ export default function Form() {
     return (
         <div key="1" className="border-1 dark:border-gray-300 p-8 rounded-md shadow-md space-y-8 relative">
             <div className="space-y-2">
-                <h2 className="text-3xl font-bold">Creación de cliente {data?.portalTittle}</h2>
+                <h2 className="text-3xl font-bold">{data?.portalTittle}</h2>
             </div>
             {
                 !register ? (
                     <form onSubmit={handleSubmit} className={'flex flex-col justify-between'}>
                         <div className="space-y-4">
                             <div className="flex justify-center items-center">
-                                <RadioGroup defaultValue="comfortable" className={'flex'}>
+                                <RadioGroup defaultValue="default" className={'flex'}>
                                     <div className="flex items-center space-x-2">
                                         <RadioGroupItem value="default" id="r1"/>
                                         <Label htmlFor="r1">Persona Natural</Label>
