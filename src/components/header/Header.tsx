@@ -15,8 +15,8 @@ const Header = () => {
             ${dataDummy?.headerColorHEX ? `bg-[#${dataDummy?.headerColorHEX}]` : 'bg-white'} z-[999]`)}>
             {
                 dataDummy ? (
-                    <Image src={dataDummy?.logo} alt={dataDummy?.portalTittle} width={80} height={80}
-                           className={'object-cover'}/>
+                    <a href={`${dataDummy?.urlCallback}`} target={'_blank'}> <Image src={dataDummy?.logo} alt={dataDummy?.portalTittle} width={80} height={80}
+                              className={'object-cover'}/></a>
                 ) : (
                     <Image src={logo} alt="logo"/>
                 )

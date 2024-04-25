@@ -23,24 +23,26 @@ import {useState} from "react";
 import FormNew from "@/components/home/FormNew";
 
 export default function Form() {
-    const [identification, setIndentification] = useState('')
-    const [error, setError] = useState(false);
+    // const [identification, setIndentification] = useState('')
+    // const [error, setError] = useState(false);
+    //
+    // const handleIdentification = (e: any) => setIndentification(e.target.value);
     const [register, setRegister] = useState(false);
-    const handleIdentification = (e: any) => setIndentification(e.target.value);
 
     const data = useStoreData()
 
     const handleSubmit = (e:any) => {
         e.preventDefault()
+        setRegister(true);
 
-        const isInCCList = data?.cc.includes(parseInt(identification));
-
-        if (isInCCList) {
-            setError(true);
-        } else {
-            setError(false);
-            setRegister(true);
-        }
+        // const isInCCList = data?.cc.includes(parseInt(identification));
+        //
+        // if (isInCCList) {
+        //     setError(true);
+        // } else {
+        //     setError(false);
+        //     setRegister(true);
+        // }
     }
 
     return (
@@ -98,7 +100,7 @@ export default function Form() {
                                     className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
                                     id="name"
                                     placeholder="Ingresa tu número de documento"
-                                    onChange={handleIdentification}
+                                    // onChange={handleIdentification}
                                     required
                                 />
                             </div>
@@ -114,8 +116,8 @@ export default function Form() {
                                     </a>
                                 </Label>
                             </div>
-                            {error ?
-                                <p className="text-red-500 text-xs">Ya te encuentras en nuesta base de datos</p> : null}
+                            {/*{error ?*/}
+                            {/*    <p className="text-red-500 text-xs">Ya te encuentras en nuesta base de datos</p> : null}*/}
                             <Button
                                 className="w-full bg-gray-300 dark:bg-gray-700 text-black dark:text-white hover:text-white"
                                 type="submit">

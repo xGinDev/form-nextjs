@@ -1,0 +1,7828 @@
+const municipies = [
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91263,
+    "NOMBRE_MUNICIPIO": "EL ENCANTO",
+    "Nombre": "El Encanto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91405,
+    "NOMBRE_MUNICIPIO": "LA CHORRERA",
+    "Nombre": "La Chorrera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91407,
+    "NOMBRE_MUNICIPIO": "LA PEDRERA",
+    "Nombre": "La Pedrera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91430,
+    "NOMBRE_MUNICIPIO": "LA VICTORIA",
+    "Nombre": "La Victoria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91001,
+    "NOMBRE_MUNICIPIO": "LETICIA",
+    "Nombre": "Leticia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91460,
+    "NOMBRE_MUNICIPIO": "MIRITI - PARANÁ",
+    "Nombre": "Miriti - Paraná"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91530,
+    "NOMBRE_MUNICIPIO": "PUERTO ALEGRIA",
+    "Nombre": "Puerto Alegria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91536,
+    "NOMBRE_MUNICIPIO": "PUERTO ARICA",
+    "Nombre": "Puerto Arica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91540,
+    "NOMBRE_MUNICIPIO": "PUERTO NARIÑO",
+    "Nombre": "Puerto Nariño"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91669,
+    "NOMBRE_MUNICIPIO": "PUERTO SANTANDER",
+    "Nombre": "Puerto Santander"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "AMAZONAS",
+    "PROVINCIA": "AMAZONAS",
+    "CODIGO_MUNICIPIO": 91798,
+    "NOMBRE_MUNICIPIO": "TARAPACÁ",
+    "Nombre": "Tarapacá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5002,
+    "NOMBRE_MUNICIPIO": "ABEJORRAL",
+    "Nombre": "Abejorral"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5004,
+    "NOMBRE_MUNICIPIO": "ABRIAQUÍ",
+    "Nombre": "Abriaquí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5021,
+    "NOMBRE_MUNICIPIO": "ALEJANDRÍA",
+    "Nombre": "Alejandría"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5030,
+    "NOMBRE_MUNICIPIO": "AMAGA",
+    "Nombre": "Amaga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5031,
+    "NOMBRE_MUNICIPIO": "AMALFI",
+    "Nombre": "Amalfi"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5034,
+    "NOMBRE_MUNICIPIO": "ANDES",
+    "Nombre": "Andes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5036,
+    "NOMBRE_MUNICIPIO": "ANGELOPOLIS",
+    "Nombre": "Angelopolis"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5038,
+    "NOMBRE_MUNICIPIO": "ANGOSTURA",
+    "Nombre": "Angostura"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5040,
+    "NOMBRE_MUNICIPIO": "ANORÍ",
+    "Nombre": "Anorí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5044,
+    "NOMBRE_MUNICIPIO": "ANZA",
+    "Nombre": "Anza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5045,
+    "NOMBRE_MUNICIPIO": "APARTADÓ",
+    "Nombre": "Apartadó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5051,
+    "NOMBRE_MUNICIPIO": "ARBOLETES",
+    "Nombre": "Arboletes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5055,
+    "NOMBRE_MUNICIPIO": "ARGELIA",
+    "Nombre": "Argelia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5059,
+    "NOMBRE_MUNICIPIO": "ARMENIA",
+    "Nombre": "Armenia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5079,
+    "NOMBRE_MUNICIPIO": "BARBOSA",
+    "Nombre": "Barbosa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5088,
+    "NOMBRE_MUNICIPIO": "BELLO",
+    "Nombre": "Bello"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5086,
+    "NOMBRE_MUNICIPIO": "BELMIRA",
+    "Nombre": "Belmira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5091,
+    "NOMBRE_MUNICIPIO": "BETANIA",
+    "Nombre": "Betania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5093,
+    "NOMBRE_MUNICIPIO": "BETULIA",
+    "Nombre": "Betulia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5107,
+    "NOMBRE_MUNICIPIO": "BRICEÑO",
+    "Nombre": "Briceño"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5113,
+    "NOMBRE_MUNICIPIO": "BURITICÁ",
+    "Nombre": "Buriticá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "BAJO CAUCA",
+    "CODIGO_MUNICIPIO": 5120,
+    "NOMBRE_MUNICIPIO": "CÁCERES",
+    "Nombre": "Cáceres"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5125,
+    "NOMBRE_MUNICIPIO": "CAICEDO",
+    "Nombre": "Caicedo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5129,
+    "NOMBRE_MUNICIPIO": "CALDAS",
+    "Nombre": "Caldas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5134,
+    "NOMBRE_MUNICIPIO": "CAMPAMENTO",
+    "Nombre": "Campamento"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5138,
+    "NOMBRE_MUNICIPIO": "CAÑASGORDAS",
+    "Nombre": "Cañasgordas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "MAGDALENA MEDIO",
+    "CODIGO_MUNICIPIO": 5142,
+    "NOMBRE_MUNICIPIO": "CARACOLÍ",
+    "Nombre": "Caracolí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5145,
+    "NOMBRE_MUNICIPIO": "CARAMANTA",
+    "Nombre": "Caramanta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5147,
+    "NOMBRE_MUNICIPIO": "CAREPA",
+    "Nombre": "Carepa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5148,
+    "NOMBRE_MUNICIPIO": "CARMEN DE VIBORAL",
+    "Nombre": "Carmen De Viboral"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5150,
+    "NOMBRE_MUNICIPIO": "CAROLINA",
+    "Nombre": "Carolina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "BAJO CAUCA",
+    "CODIGO_MUNICIPIO": 5154,
+    "NOMBRE_MUNICIPIO": "CAUCASIA",
+    "Nombre": "Caucasia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5172,
+    "NOMBRE_MUNICIPIO": "CHIGORODÓ",
+    "Nombre": "Chigorodó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5190,
+    "NOMBRE_MUNICIPIO": "CISNEROS",
+    "Nombre": "Cisneros"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5101,
+    "NOMBRE_MUNICIPIO": "CIUDAD BOLÍVAR",
+    "Nombre": "Ciudad Bolívar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5197,
+    "NOMBRE_MUNICIPIO": "COCORNÁ",
+    "Nombre": "Cocorná"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5206,
+    "NOMBRE_MUNICIPIO": "CONCEPCIÓN",
+    "Nombre": "Concepción"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5209,
+    "NOMBRE_MUNICIPIO": "CONCORDIA",
+    "Nombre": "Concordia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5212,
+    "NOMBRE_MUNICIPIO": "COPACABANA",
+    "Nombre": "Copacabana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5234,
+    "NOMBRE_MUNICIPIO": "DABEIBA",
+    "Nombre": "Dabeiba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5237,
+    "NOMBRE_MUNICIPIO": "DON MATiAS",
+    "Nombre": "Don Matias"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5240,
+    "NOMBRE_MUNICIPIO": "EBÉJICO",
+    "Nombre": "Ebéjico"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "BAJO CAUCA",
+    "CODIGO_MUNICIPIO": 5250,
+    "NOMBRE_MUNICIPIO": "EL BAGRE",
+    "Nombre": "El Bagre"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5264,
+    "NOMBRE_MUNICIPIO": "ENTRERRIOS",
+    "Nombre": "Entrerrios"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5266,
+    "NOMBRE_MUNICIPIO": "ENVIGADO",
+    "Nombre": "Envigado"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5282,
+    "NOMBRE_MUNICIPIO": "FREDONIA",
+    "Nombre": "Fredonia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5284,
+    "NOMBRE_MUNICIPIO": "FRONTINO",
+    "Nombre": "Frontino"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5306,
+    "NOMBRE_MUNICIPIO": "GIRALDO",
+    "Nombre": "Giraldo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5308,
+    "NOMBRE_MUNICIPIO": "GIRARDOTA",
+    "Nombre": "Girardota"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5310,
+    "NOMBRE_MUNICIPIO": "GÓMEZ PLATA",
+    "Nombre": "Gómez Plata"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5313,
+    "NOMBRE_MUNICIPIO": "GRANADA",
+    "Nombre": "Granada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5315,
+    "NOMBRE_MUNICIPIO": "GUADALUPE",
+    "Nombre": "Guadalupe"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5318,
+    "NOMBRE_MUNICIPIO": "GUARNE",
+    "Nombre": "Guarne"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5321,
+    "NOMBRE_MUNICIPIO": "GUATAPE",
+    "Nombre": "Guatape"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5347,
+    "NOMBRE_MUNICIPIO": "HELICONIA",
+    "Nombre": "Heliconia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5353,
+    "NOMBRE_MUNICIPIO": "HISPANIA",
+    "Nombre": "Hispania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5360,
+    "NOMBRE_MUNICIPIO": "ITAGUI",
+    "Nombre": "Itagui"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5361,
+    "NOMBRE_MUNICIPIO": "ITUANGO",
+    "Nombre": "Ituango"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5364,
+    "NOMBRE_MUNICIPIO": "JARDÍN",
+    "Nombre": "Jardín"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5368,
+    "NOMBRE_MUNICIPIO": "JERICÓ",
+    "Nombre": "Jericó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5376,
+    "NOMBRE_MUNICIPIO": "LA CEJA",
+    "Nombre": "La Ceja"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5380,
+    "NOMBRE_MUNICIPIO": "LA ESTRELLA",
+    "Nombre": "La Estrella"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5390,
+    "NOMBRE_MUNICIPIO": "LA PINTADA",
+    "Nombre": "La Pintada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5400,
+    "NOMBRE_MUNICIPIO": "LA UNIÓN",
+    "Nombre": "La Unión"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5411,
+    "NOMBRE_MUNICIPIO": "LIBORINA",
+    "Nombre": "Liborina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "MAGDALENA MEDIO",
+    "CODIGO_MUNICIPIO": 5425,
+    "NOMBRE_MUNICIPIO": "MACEO",
+    "Nombre": "Maceo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5440,
+    "NOMBRE_MUNICIPIO": "MARINILLA",
+    "Nombre": "Marinilla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5001,
+    "NOMBRE_MUNICIPIO": "MEDELLÍN",
+    "Nombre": "Medellín"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5467,
+    "NOMBRE_MUNICIPIO": "MONTEBELLO",
+    "Nombre": "Montebello"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5475,
+    "NOMBRE_MUNICIPIO": "MURINDÓ",
+    "Nombre": "Murindó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5480,
+    "NOMBRE_MUNICIPIO": "MUTATA",
+    "Nombre": "Mutata"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5483,
+    "NOMBRE_MUNICIPIO": "NARIÑO",
+    "Nombre": "Nariño"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "BAJO CAUCA",
+    "CODIGO_MUNICIPIO": 5495,
+    "NOMBRE_MUNICIPIO": "NECHÍ",
+    "Nombre": "Nechí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5490,
+    "NOMBRE_MUNICIPIO": "NECOCLÍ",
+    "Nombre": "Necoclí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5501,
+    "NOMBRE_MUNICIPIO": "OLAYA",
+    "Nombre": "Olaya"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5541,
+    "NOMBRE_MUNICIPIO": "PEÑOL",
+    "Nombre": "Peñol"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5543,
+    "NOMBRE_MUNICIPIO": "PEQUE",
+    "Nombre": "Peque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5576,
+    "NOMBRE_MUNICIPIO": "PUEBLORRICO",
+    "Nombre": "Pueblorrico"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "MAGDALENA MEDIO",
+    "CODIGO_MUNICIPIO": 5579,
+    "NOMBRE_MUNICIPIO": "PUERTO BERRiO",
+    "Nombre": "Puerto Berrio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "MAGDALENA MEDIO",
+    "CODIGO_MUNICIPIO": 5585,
+    "NOMBRE_MUNICIPIO": "PUERTO NARE",
+    "Nombre": "Puerto Nare"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "MAGDALENA MEDIO",
+    "CODIGO_MUNICIPIO": 5591,
+    "NOMBRE_MUNICIPIO": "PUERTO TRIUNFO",
+    "Nombre": "Puerto Triunfo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5604,
+    "NOMBRE_MUNICIPIO": "REMEDIOS",
+    "Nombre": "Remedios"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5607,
+    "NOMBRE_MUNICIPIO": "RETIRO",
+    "Nombre": "Retiro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5615,
+    "NOMBRE_MUNICIPIO": "RIONEGRO",
+    "Nombre": "Rionegro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5628,
+    "NOMBRE_MUNICIPIO": "SABANALARGA",
+    "Nombre": "Sabanalarga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "VALLE DEL ABURRA",
+    "CODIGO_MUNICIPIO": 5631,
+    "NOMBRE_MUNICIPIO": "SABANETA",
+    "Nombre": "Sabaneta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5642,
+    "NOMBRE_MUNICIPIO": "SALGAR",
+    "Nombre": "Salgar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5647,
+    "NOMBRE_MUNICIPIO": "SAN ANDRÉS",
+    "Nombre": "San Andrés"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5649,
+    "NOMBRE_MUNICIPIO": "SAN CARLOS",
+    "Nombre": "San Carlos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5652,
+    "NOMBRE_MUNICIPIO": "SAN FRANCISCO",
+    "Nombre": "San Francisco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5656,
+    "NOMBRE_MUNICIPIO": "SAN JERÓNIMO",
+    "Nombre": "San Jerónimo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5658,
+    "NOMBRE_MUNICIPIO": "SAN JOSÉ DE LA MONTA",
+    "Nombre": "San José De La Montaña"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5659,
+    "NOMBRE_MUNICIPIO": "SAN JUAN DE URABA",
+    "Nombre": "San Juan De Uraba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5660,
+    "NOMBRE_MUNICIPIO": "SAN LUIS",
+    "Nombre": "San Luis"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5664,
+    "NOMBRE_MUNICIPIO": "SAN PEDRO",
+    "Nombre": "San Pedro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5665,
+    "NOMBRE_MUNICIPIO": "SAN PEDRO DE URABA",
+    "Nombre": "San Pedro De Uraba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5667,
+    "NOMBRE_MUNICIPIO": "SAN RAFAEL",
+    "Nombre": "San Rafael"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5670,
+    "NOMBRE_MUNICIPIO": "SAN ROQUE",
+    "Nombre": "San Roque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5674,
+    "NOMBRE_MUNICIPIO": "SAN VICENTE",
+    "Nombre": "San Vicente"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5679,
+    "NOMBRE_MUNICIPIO": "SANTA BaRBARA",
+    "Nombre": "Santa Barbara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5686,
+    "NOMBRE_MUNICIPIO": "SANTA ROSA de osos",
+    "Nombre": "Santa Rosa De Osos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5042,
+    "NOMBRE_MUNICIPIO": "SANTAFÉ DE ANTIOQUIA",
+    "Nombre": "Santafé De Antioquia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5690,
+    "NOMBRE_MUNICIPIO": "SANTO DOMINGO",
+    "Nombre": "Santo Domingo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5697,
+    "NOMBRE_MUNICIPIO": "SANTUARIO",
+    "Nombre": "Santuario"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5736,
+    "NOMBRE_MUNICIPIO": "SEGOVIA",
+    "Nombre": "Segovia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 5756,
+    "NOMBRE_MUNICIPIO": "SONSON",
+    "Nombre": "Sonson"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5761,
+    "NOMBRE_MUNICIPIO": "SOPETRaN",
+    "Nombre": "Sopetran"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5789,
+    "NOMBRE_MUNICIPIO": "TÁMESIS",
+    "Nombre": "Támesis"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "BAJO CAUCA",
+    "CODIGO_MUNICIPIO": 5790,
+    "NOMBRE_MUNICIPIO": "TARAZÁ",
+    "Nombre": "Tarazá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5792,
+    "NOMBRE_MUNICIPIO": "TARSO",
+    "Nombre": "Tarso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5809,
+    "NOMBRE_MUNICIPIO": "TITIRIBÍ",
+    "Nombre": "Titiribí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5819,
+    "NOMBRE_MUNICIPIO": "TOLEDO",
+    "Nombre": "Toledo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5837,
+    "NOMBRE_MUNICIPIO": "TURBO",
+    "Nombre": "Turbo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 5842,
+    "NOMBRE_MUNICIPIO": "URAMITA",
+    "Nombre": "Uramita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5847,
+    "NOMBRE_MUNICIPIO": "URRAO",
+    "Nombre": "Urrao"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5854,
+    "NOMBRE_MUNICIPIO": "VALDIVIA",
+    "Nombre": "Valdivia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5856,
+    "NOMBRE_MUNICIPIO": "VALPARAISO",
+    "Nombre": "Valparaiso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5858,
+    "NOMBRE_MUNICIPIO": "VEGACHÍ",
+    "Nombre": "Vegachí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "SUROESTE",
+    "CODIGO_MUNICIPIO": 5861,
+    "NOMBRE_MUNICIPIO": "VENECIA",
+    "Nombre": "Venecia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "URABA",
+    "CODIGO_MUNICIPIO": 5873,
+    "NOMBRE_MUNICIPIO": "VIGÍA DEL FUERTE",
+    "Nombre": "Vigía Del Fuerte"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5885,
+    "NOMBRE_MUNICIPIO": "YALÍ",
+    "Nombre": "Yalí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 5887,
+    "NOMBRE_MUNICIPIO": "YARUMAL",
+    "Nombre": "Yarumal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "NORDESTE",
+    "CODIGO_MUNICIPIO": 5890,
+    "NOMBRE_MUNICIPIO": "YOLOMBÓ",
+    "Nombre": "Yolombó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "MAGDALENA MEDIO",
+    "CODIGO_MUNICIPIO": 5893,
+    "NOMBRE_MUNICIPIO": "YONDÓ",
+    "Nombre": "Yondó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ANTIOQUIA",
+    "PROVINCIA": "BAJO CAUCA",
+    "CODIGO_MUNICIPIO": 5895,
+    "NOMBRE_MUNICIPIO": "ZARAGOZA",
+    "Nombre": "Zaragoza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARAUCA",
+    "PROVINCIA": "ARAUCA",
+    "CODIGO_MUNICIPIO": 81001,
+    "NOMBRE_MUNICIPIO": "ARAUCA",
+    "Nombre": "Arauca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARAUCA",
+    "PROVINCIA": "ARAUCA",
+    "CODIGO_MUNICIPIO": 81065,
+    "NOMBRE_MUNICIPIO": "ARAUQUITA",
+    "Nombre": "Arauquita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARAUCA",
+    "PROVINCIA": "ARAUCA",
+    "CODIGO_MUNICIPIO": 81220,
+    "NOMBRE_MUNICIPIO": "CRAVO NORTE",
+    "Nombre": "Cravo Norte"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARAUCA",
+    "PROVINCIA": "ARAUCA",
+    "CODIGO_MUNICIPIO": 81300,
+    "NOMBRE_MUNICIPIO": "FORTUL",
+    "Nombre": "Fortul"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARAUCA",
+    "PROVINCIA": "ARAUCA",
+    "CODIGO_MUNICIPIO": 81591,
+    "NOMBRE_MUNICIPIO": "PUERTO RONDÓN",
+    "Nombre": "Puerto Rondón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARAUCA",
+    "PROVINCIA": "ARAUCA",
+    "CODIGO_MUNICIPIO": 81736,
+    "NOMBRE_MUNICIPIO": "SARAVENA",
+    "Nombre": "Saravena"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARAUCA",
+    "PROVINCIA": "ARAUCA",
+    "CODIGO_MUNICIPIO": 81794,
+    "NOMBRE_MUNICIPIO": "TAME",
+    "Nombre": "Tame"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARCHIPIELAGO DE SAN ANDRÉS",
+    "PROVINCIA": "ARCHIPIELAGO DE SAN ANDRÉS",
+    "CODIGO_MUNICIPIO": 88564,
+    "NOMBRE_MUNICIPIO": "PROVIDENCIA Y SANTA CProvidencia Y Santa Catalina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ARCHIPIELAGO DE SAN ANDRÉS",
+    "PROVINCIA": "ARCHIPIELAGO DE SAN ANDRÉS",
+    "CODIGO_MUNICIPIO": 88001,
+    "NOMBRE_MUNICIPIO": "SAN ANDReS",
+    "Nombre": "San Andres"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "CENTRO ORIENTE",
+    "CODIGO_MUNICIPIO": 8078,
+    "NOMBRE_MUNICIPIO": "BARANOA",
+    "Nombre": "Baranoa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 8001,
+    "NOMBRE_MUNICIPIO": "BARRANQUILLA",
+    "Nombre": "Barranquilla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 8137,
+    "NOMBRE_MUNICIPIO": "CAMPO DE LA CRUZ",
+    "Nombre": "Campo De La Cruz"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 8141,
+    "NOMBRE_MUNICIPIO": "CANDELARIA",
+    "Nombre": "Candelaria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 8296,
+    "NOMBRE_MUNICIPIO": "GALAPA",
+    "Nombre": "Galapa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 8372,
+    "NOMBRE_MUNICIPIO": "JUAN DE ACOSTA",
+    "Nombre": "Juan De Acosta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 8421,
+    "NOMBRE_MUNICIPIO": "LURUACO",
+    "Nombre": "Luruaco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 8433,
+    "NOMBRE_MUNICIPIO": "MALAMBO",
+    "Nombre": "Malambo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 8436,
+    "NOMBRE_MUNICIPIO": "MANATi",
+    "Nombre": "Manati"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "CENTRO ORIENTE",
+    "CODIGO_MUNICIPIO": 8520,
+    "NOMBRE_MUNICIPIO": "PALMAR DE VARELA",
+    "Nombre": "Palmar De Varela"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 8549,
+    "NOMBRE_MUNICIPIO": "PIOJÓ",
+    "Nombre": "Piojó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "CENTRO ORIENTE",
+    "CODIGO_MUNICIPIO": 8558,
+    "NOMBRE_MUNICIPIO": "POLONUEVO",
+    "Nombre": "Polonuevo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "CENTRO ORIENTE",
+    "CODIGO_MUNICIPIO": 8560,
+    "NOMBRE_MUNICIPIO": "PONEDERA",
+    "Nombre": "Ponedera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 8573,
+    "NOMBRE_MUNICIPIO": "PUERTO COLOMBIA",
+    "Nombre": "Puerto Colombia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 8606,
+    "NOMBRE_MUNICIPIO": "REPELON",
+    "Nombre": "Repelon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "CENTRO ORIENTE",
+    "CODIGO_MUNICIPIO": 8634,
+    "NOMBRE_MUNICIPIO": "Sabanagrande",
+    "Nombre": "Sabanagrande"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "CENTRO ORIENTE",
+    "CODIGO_MUNICIPIO": 8638,
+    "NOMBRE_MUNICIPIO": "SABANALARGA",
+    "Nombre": "Sabanalarga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 8675,
+    "NOMBRE_MUNICIPIO": "SANTA LUCiA",
+    "Nombre": "Santa Lucia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "CENTRO ORIENTE",
+    "CODIGO_MUNICIPIO": 8685,
+    "NOMBRE_MUNICIPIO": "Santo Tomas",
+    "Nombre": "Santo Tomas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 8758,
+    "NOMBRE_MUNICIPIO": "SOLEDAD",
+    "Nombre": "Soledad"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 8770,
+    "NOMBRE_MUNICIPIO": "SUAN",
+    "Nombre": "Suan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 8832,
+    "NOMBRE_MUNICIPIO": "TUBARA",
+    "Nombre": "Tubara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "ATLÁNTICO",
+    "PROVINCIA": "OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 8849,
+    "NOMBRE_MUNICIPIO": "USIACURi",
+    "Nombre": "Usiacuri"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOGOTÁ D.C.",
+    "PROVINCIA": "BOGOTA",
+    "CODIGO_MUNICIPIO": 11001,
+    "NOMBRE_MUNICIPIO": "BOGOTA D.C.",
+    "Nombre": "Bogota D.C."
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MOJANA BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13006,
+    "NOMBRE_MUNICIPIO": "ACHÍ",
+    "Nombre": "Achí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "LOBA",
+    "CODIGO_MUNICIPIO": 13030,
+    "NOMBRE_MUNICIPIO": "ALTOS DEL ROSARIO",
+    "Nombre": "Altos Del Rosario"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MAGDALENA MEDIO BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13042,
+    "NOMBRE_MUNICIPIO": "ARENAL",
+    "Nombre": "Arenal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13052,
+    "NOMBRE_MUNICIPIO": "ARJONA",
+    "Nombre": "Arjona"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13062,
+    "NOMBRE_MUNICIPIO": "ARROYOHONDO",
+    "Nombre": "Arroyohondo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "LOBA",
+    "CODIGO_MUNICIPIO": 13074,
+    "NOMBRE_MUNICIPIO": "BARRANCO DE LOBA",
+    "Nombre": "Barranco De Loba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13140,
+    "NOMBRE_MUNICIPIO": "CALAMAR",
+    "Nombre": "Calamar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MAGDALENA MEDIO BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13160,
+    "NOMBRE_MUNICIPIO": "CANTAGALLO",
+    "Nombre": "Cantagallo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 13244,
+    "NOMBRE_MUNICIPIO": "CARMEN DE BOLÍVAR",
+    "Nombre": "Carmen De Bolívar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13001,
+    "NOMBRE_MUNICIPIO": "CARTAGENA",
+    "Nombre": "Cartagena"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DEPRESION MOMPOSINA",
+    "CODIGO_MUNICIPIO": 13188,
+    "NOMBRE_MUNICIPIO": "CICUCO",
+    "Nombre": "Cicuco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13222,
+    "NOMBRE_MUNICIPIO": "CLEMENCIA",
+    "Nombre": "Clemencia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 13212,
+    "NOMBRE_MUNICIPIO": "CÓRDOBA",
+    "Nombre": "Córdoba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 13248,
+    "NOMBRE_MUNICIPIO": "EL GUAMO",
+    "Nombre": "El Guamo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "LOBA",
+    "CODIGO_MUNICIPIO": 13268,
+    "NOMBRE_MUNICIPIO": "EL PEÑON",
+    "Nombre": "El Peñon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DEPRESION MOMPOSINA",
+    "CODIGO_MUNICIPIO": 13300,
+    "NOMBRE_MUNICIPIO": "HATILLO DE LOBA",
+    "Nombre": "Hatillo De Loba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MOJANA BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13430,
+    "NOMBRE_MUNICIPIO": "MAGANGUÉ",
+    "Nombre": "Magangué"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13433,
+    "NOMBRE_MUNICIPIO": "MAHATES",
+    "Nombre": "Mahates"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DEPRESION MOMPOSINA",
+    "CODIGO_MUNICIPIO": 13440,
+    "NOMBRE_MUNICIPIO": "MARGARITA",
+    "Nombre": "Margarita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 13442,
+    "NOMBRE_MUNICIPIO": "MARÍA LA BAJA",
+    "Nombre": "María La Baja"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DEPRESION MOMPOSINA",
+    "CODIGO_MUNICIPIO": 13468,
+    "NOMBRE_MUNICIPIO": "MOMPÓS",
+    "Nombre": "Mompós"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MOJANA BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13458,
+    "NOMBRE_MUNICIPIO": "MONTECRISTO",
+    "Nombre": "Montecristo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MAGDALENA MEDIO BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13473,
+    "NOMBRE_MUNICIPIO": "MORALES",
+    "Nombre": "Morales"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MOJANA BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13549,
+    "NOMBRE_MUNICIPIO": "PINILLOS",
+    "Nombre": "Pinillos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "LOBA",
+    "CODIGO_MUNICIPIO": 13580,
+    "NOMBRE_MUNICIPIO": "REGIDOR",
+    "Nombre": "Regidor"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "LOBA",
+    "CODIGO_MUNICIPIO": 13600,
+    "NOMBRE_MUNICIPIO": "RÍO VIEJO",
+    "Nombre": "Río Viejo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13620,
+    "NOMBRE_MUNICIPIO": "SAN CRISTOBAL",
+    "Nombre": "San Cristobal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13647,
+    "NOMBRE_MUNICIPIO": "SAN ESTANISLAO",
+    "Nombre": "San Estanislao"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DEPRESION MOMPOSINA",
+    "CODIGO_MUNICIPIO": 13650,
+    "NOMBRE_MUNICIPIO": "SAN FERNANDO",
+    "Nombre": "San Fernando"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 13654,
+    "NOMBRE_MUNICIPIO": "SAN JACINTO",
+    "Nombre": "San Jacinto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MOJANA BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13655,
+    "NOMBRE_MUNICIPIO": "SAN JACINTO DEL CAUC",
+    "Nombre": "San Jacinto Del Cauca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 13657,
+    "NOMBRE_MUNICIPIO": "SAN JUAN NEPOMUCENO",
+    "Nombre": "San Juan Nepomuceno"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "LOBA",
+    "CODIGO_MUNICIPIO": 13667,
+    "NOMBRE_MUNICIPIO": "SAN MARTIN DE LOBA",
+    "Nombre": "San Martin De Loba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MAGDALENA MEDIO BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13670,
+    "NOMBRE_MUNICIPIO": "SAN PABLO",
+    "Nombre": "San Pablo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13673,
+    "NOMBRE_MUNICIPIO": "SANTA CATALINA",
+    "Nombre": "Santa Catalina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13683,
+    "NOMBRE_MUNICIPIO": "SANTA ROSA DE LIMA",
+    "Nombre": "Santa Rosa De Lima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MAGDALENA MEDIO BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13688,
+    "NOMBRE_MUNICIPIO": "SANTA ROSA DEL SUR",
+    "Nombre": "Santa Rosa Del Sur"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MAGDALENA MEDIO BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13744,
+    "NOMBRE_MUNICIPIO": "SIMITÍ",
+    "Nombre": "Simití"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13760,
+    "NOMBRE_MUNICIPIO": "SOPLAVIENTO",
+    "Nombre": "Soplaviento"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DEPRESION MOMPOSINA",
+    "CODIGO_MUNICIPIO": 13780,
+    "NOMBRE_MUNICIPIO": "TALAIGUA NUEVO",
+    "Nombre": "Talaigua Nuevo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MOJANA BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13810,
+    "NOMBRE_MUNICIPIO": "TIQUISIO",
+    "Nombre": "Tiquisio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13836,
+    "NOMBRE_MUNICIPIO": "TURBACO",
+    "Nombre": "Turbaco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13838,
+    "NOMBRE_MUNICIPIO": "TURBANA",
+    "Nombre": "Turbana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "DIQUE BOLIVARENSE",
+    "CODIGO_MUNICIPIO": 13873,
+    "NOMBRE_MUNICIPIO": "VILLANUEVA",
+    "Nombre": "Villanueva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOLIVAR",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 13894,
+    "NOMBRE_MUNICIPIO": "ZAMBRANO",
+    "Nombre": "Zambrano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15022,
+    "NOMBRE_MUNICIPIO": "ALMEIDA",
+    "Nombre": "Almeida"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15047,
+    "NOMBRE_MUNICIPIO": "AQUITANIA",
+    "Nombre": "Aquitania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15051,
+    "NOMBRE_MUNICIPIO": "ARCABUCO",
+    "Nombre": "Arcabuco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15087,
+    "NOMBRE_MUNICIPIO": "BELÉN",
+    "Nombre": "Belén"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LENGUPA",
+    "CODIGO_MUNICIPIO": 15090,
+    "NOMBRE_MUNICIPIO": "BERBEO",
+    "Nombre": "Berbeo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "VALDERRAMA",
+    "CODIGO_MUNICIPIO": 15092,
+    "NOMBRE_MUNICIPIO": "BETÉITIVA",
+    "Nombre": "Betéitiva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15097,
+    "NOMBRE_MUNICIPIO": "BOAVITA",
+    "Nombre": "Boavita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15104,
+    "NOMBRE_MUNICIPIO": "BOYACÁ",
+    "Nombre": "Boyacá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15106,
+    "NOMBRE_MUNICIPIO": "BRICEÑO",
+    "Nombre": "Briceño"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15109,
+    "NOMBRE_MUNICIPIO": "BUENAVISTA",
+    "Nombre": "Buenavista"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15114,
+    "NOMBRE_MUNICIPIO": "BUSBANZÁ",
+    "Nombre": "Busbanzá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15131,
+    "NOMBRE_MUNICIPIO": "CALDAS",
+    "Nombre": "Caldas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LENGUPA",
+    "CODIGO_MUNICIPIO": 15135,
+    "NOMBRE_MUNICIPIO": "CAMPOHERMOSO",
+    "Nombre": "Campohermoso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15162,
+    "NOMBRE_MUNICIPIO": "CERINZA",
+    "Nombre": "Cerinza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NEIRA",
+    "CODIGO_MUNICIPIO": 15172,
+    "NOMBRE_MUNICIPIO": "CHINAVITA",
+    "Nombre": "Chinavita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15176,
+    "NOMBRE_MUNICIPIO": "CHIQUINQUIRÁ",
+    "Nombre": "Chiquinquirá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15232,
+    "NOMBRE_MUNICIPIO": "CHÍQUIZA",
+    "Nombre": "Chíquiza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "GUTIERREZ",
+    "CODIGO_MUNICIPIO": 15180,
+    "NOMBRE_MUNICIPIO": "CHISCAS",
+    "Nombre": "Chiscas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "VALDERRAMA",
+    "CODIGO_MUNICIPIO": 15183,
+    "NOMBRE_MUNICIPIO": "CHITA",
+    "Nombre": "Chita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15185,
+    "NOMBRE_MUNICIPIO": "CHITARAQUE",
+    "Nombre": "Chitaraque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15187,
+    "NOMBRE_MUNICIPIO": "CHIVATÁ",
+    "Nombre": "Chivatá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15236,
+    "NOMBRE_MUNICIPIO": "CHIVOR",
+    "Nombre": "Chivor"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15189,
+    "NOMBRE_MUNICIPIO": "CIÉNEGA",
+    "Nombre": "Ciénega"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15204,
+    "NOMBRE_MUNICIPIO": "CÓMBITA",
+    "Nombre": "Cómbita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15212,
+    "NOMBRE_MUNICIPIO": "COPER",
+    "Nombre": "Coper"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15215,
+    "NOMBRE_MUNICIPIO": "CORRALES",
+    "Nombre": "Corrales"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15218,
+    "NOMBRE_MUNICIPIO": "COVARACHÍA",
+    "Nombre": "Covarachía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "GUTIERREZ",
+    "CODIGO_MUNICIPIO": 15223,
+    "NOMBRE_MUNICIPIO": "CUBARÁ",
+    "Nombre": "Cubará"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15224,
+    "NOMBRE_MUNICIPIO": "CUCAITA",
+    "Nombre": "Cucaita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15226,
+    "NOMBRE_MUNICIPIO": "CUÍTIVA",
+    "Nombre": "Cuítiva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15238,
+    "NOMBRE_MUNICIPIO": "DUITAMA",
+    "Nombre": "Duitama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "GUTIERREZ",
+    "CODIGO_MUNICIPIO": 15244,
+    "NOMBRE_MUNICIPIO": "EL COCUY",
+    "Nombre": "El Cocuy"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "GUTIERREZ",
+    "CODIGO_MUNICIPIO": 15248,
+    "NOMBRE_MUNICIPIO": "EL ESPINO",
+    "Nombre": "El Espino"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15272,
+    "NOMBRE_MUNICIPIO": "FIRAVITOBA",
+    "Nombre": "Firavitoba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15276,
+    "NOMBRE_MUNICIPIO": "FLORESTA",
+    "Nombre": "Floresta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15293,
+    "NOMBRE_MUNICIPIO": "GACHANTIVÁ",
+    "Nombre": "Gachantivá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15296,
+    "NOMBRE_MUNICIPIO": "GAMEZA",
+    "Nombre": "Gameza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NEIRA",
+    "CODIGO_MUNICIPIO": 15299,
+    "NOMBRE_MUNICIPIO": "GARAGOA",
+    "Nombre": "Garagoa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "GUTIERREZ",
+    "CODIGO_MUNICIPIO": 15317,
+    "NOMBRE_MUNICIPIO": "GUACAMAYAS",
+    "Nombre": "Guacamayas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15322,
+    "NOMBRE_MUNICIPIO": "GUATEQUE",
+    "Nombre": "Guateque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15325,
+    "NOMBRE_MUNICIPIO": "GUAYATÁ",
+    "Nombre": "Guayatá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "GUTIERREZ",
+    "CODIGO_MUNICIPIO": 15332,
+    "NOMBRE_MUNICIPIO": "GÜICÁN",
+    "Nombre": "Güicán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15362,
+    "NOMBRE_MUNICIPIO": "IZA",
+    "Nombre": "Iza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15367,
+    "NOMBRE_MUNICIPIO": "JENESANO",
+    "Nombre": "Jenesano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "VALDERRAMA",
+    "CODIGO_MUNICIPIO": 15368,
+    "NOMBRE_MUNICIPIO": "JERICÓ",
+    "Nombre": "Jericó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15380,
+    "NOMBRE_MUNICIPIO": "LA CAPILLA",
+    "Nombre": "La Capilla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15403,
+    "NOMBRE_MUNICIPIO": "LA UVITA",
+    "Nombre": "La Uvita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15401,
+    "NOMBRE_MUNICIPIO": "LA VICTORIA",
+    "Nombre": "La Victoria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LA LIBERTAD",
+    "CODIGO_MUNICIPIO": 15377,
+    "NOMBRE_MUNICIPIO": "LABRANZAGRANDE",
+    "Nombre": "Labranzagrande"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NEIRA",
+    "CODIGO_MUNICIPIO": 15425,
+    "NOMBRE_MUNICIPIO": "MACANAL",
+    "Nombre": "Macanal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15442,
+    "NOMBRE_MUNICIPIO": "MARIPÍ",
+    "Nombre": "Maripí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LENGUPA",
+    "CODIGO_MUNICIPIO": 15455,
+    "NOMBRE_MUNICIPIO": "MIRAFLORES",
+    "Nombre": "Miraflores"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15464,
+    "NOMBRE_MUNICIPIO": "MONGUA",
+    "Nombre": "Mongua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15466,
+    "NOMBRE_MUNICIPIO": "MONGUÍ",
+    "Nombre": "Monguí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15469,
+    "NOMBRE_MUNICIPIO": "MONIQUIRÁ",
+    "Nombre": "Moniquirá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15476,
+    "NOMBRE_MUNICIPIO": "MOTAVITA",
+    "Nombre": "Motavita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15480,
+    "NOMBRE_MUNICIPIO": "MUZO",
+    "Nombre": "Muzo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15491,
+    "NOMBRE_MUNICIPIO": "NOBSA",
+    "Nombre": "Nobsa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15494,
+    "NOMBRE_MUNICIPIO": "NUEVO COLÓN",
+    "Nombre": "Nuevo Colón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15500,
+    "NOMBRE_MUNICIPIO": "OICATÁ",
+    "Nombre": "Oicatá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15507,
+    "NOMBRE_MUNICIPIO": "OTANCHE",
+    "Nombre": "Otanche"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NEIRA",
+    "CODIGO_MUNICIPIO": 15511,
+    "NOMBRE_MUNICIPIO": "PACHAVITA",
+    "Nombre": "Pachavita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LENGUPA",
+    "CODIGO_MUNICIPIO": 15514,
+    "NOMBRE_MUNICIPIO": "PÁEZ",
+    "Nombre": "Páez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15516,
+    "NOMBRE_MUNICIPIO": "PAIPA",
+    "Nombre": "Paipa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LA LIBERTAD",
+    "CODIGO_MUNICIPIO": 15518,
+    "NOMBRE_MUNICIPIO": "PAJARITO",
+    "Nombre": "Pajarito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "GUTIERREZ",
+    "CODIGO_MUNICIPIO": 15522,
+    "NOMBRE_MUNICIPIO": "PANQUEBA",
+    "Nombre": "Panqueba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15531,
+    "NOMBRE_MUNICIPIO": "PAUNA",
+    "Nombre": "Pauna"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LA LIBERTAD",
+    "CODIGO_MUNICIPIO": 15533,
+    "NOMBRE_MUNICIPIO": "PAYA",
+    "Nombre": "Paya"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "VALDERRAMA",
+    "CODIGO_MUNICIPIO": 15537,
+    "NOMBRE_MUNICIPIO": "PAZ DE RÍO",
+    "Nombre": "Paz De Río"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15542,
+    "NOMBRE_MUNICIPIO": "PESCA",
+    "Nombre": "Pesca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LA LIBERTAD",
+    "CODIGO_MUNICIPIO": 15550,
+    "NOMBRE_MUNICIPIO": "PISBA",
+    "Nombre": "Pisba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15572,
+    "NOMBRE_MUNICIPIO": "PUERTO BOYACa",
+    "Nombre": "Puerto Boyaca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15580,
+    "NOMBRE_MUNICIPIO": "QUÍPAMA",
+    "Nombre": "Quípama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15599,
+    "NOMBRE_MUNICIPIO": "RAMIRIQUÍ",
+    "Nombre": "Ramiriquí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15600,
+    "NOMBRE_MUNICIPIO": "RÁQUIRA",
+    "Nombre": "Ráquira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15621,
+    "NOMBRE_MUNICIPIO": "RONDÓN",
+    "Nombre": "Rondón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15632,
+    "NOMBRE_MUNICIPIO": "SABOYÁ",
+    "Nombre": "Saboyá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15638,
+    "NOMBRE_MUNICIPIO": "SÁCHICA",
+    "Nombre": "Sáchica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15646,
+    "NOMBRE_MUNICIPIO": "SAMACÁ",
+    "Nombre": "Samacá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LENGUPA",
+    "CODIGO_MUNICIPIO": 15660,
+    "NOMBRE_MUNICIPIO": "SAN EDUARDO",
+    "Nombre": "San Eduardo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15664,
+    "NOMBRE_MUNICIPIO": "SAN JOSÉ DE PARE",
+    "Nombre": "San José De Pare"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NEIRA",
+    "CODIGO_MUNICIPIO": 15667,
+    "NOMBRE_MUNICIPIO": "SAN LUIS DE GACENO",
+    "Nombre": "San Luis De Gaceno"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15673,
+    "NOMBRE_MUNICIPIO": "SAN MATEO",
+    "Nombre": "San Mateo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15676,
+    "NOMBRE_MUNICIPIO": "SAN MIGUEL DE SEMA",
+    "Nombre": "San Miguel De Sema"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15681,
+    "NOMBRE_MUNICIPIO": "SAN PABLO BORBUR",
+    "Nombre": "San Pablo Borbur"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15693,
+    "NOMBRE_MUNICIPIO": "SAN ROSA VITERBO",
+    "Nombre": "San Rosa Viterbo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NEIRA",
+    "CODIGO_MUNICIPIO": 15690,
+    "NOMBRE_MUNICIPIO": "SANTA MARÍA",
+    "Nombre": "Santa María"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15696,
+    "NOMBRE_MUNICIPIO": "SANTA SOFÍA",
+    "Nombre": "Santa Sofía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15686,
+    "NOMBRE_MUNICIPIO": "SANTANA",
+    "Nombre": "Santana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15720,
+    "NOMBRE_MUNICIPIO": "SATIVANORTE",
+    "Nombre": "Sativanorte"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15723,
+    "NOMBRE_MUNICIPIO": "SATIVASUR",
+    "Nombre": "Sativasur"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15740,
+    "NOMBRE_MUNICIPIO": "SIACHOQUE",
+    "Nombre": "Siachoque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15753,
+    "NOMBRE_MUNICIPIO": "SOATÁ",
+    "Nombre": "Soatá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "VALDERRAMA",
+    "CODIGO_MUNICIPIO": 15757,
+    "NOMBRE_MUNICIPIO": "SOCHA",
+    "Nombre": "Socha"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "VALDERRAMA",
+    "CODIGO_MUNICIPIO": 15755,
+    "NOMBRE_MUNICIPIO": "SOCOTÁ",
+    "Nombre": "Socotá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15759,
+    "NOMBRE_MUNICIPIO": "SOGAMOSO",
+    "Nombre": "Sogamoso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15761,
+    "NOMBRE_MUNICIPIO": "SOMONDOCO",
+    "Nombre": "Somondoco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15762,
+    "NOMBRE_MUNICIPIO": "SORA",
+    "Nombre": "Sora"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15764,
+    "NOMBRE_MUNICIPIO": "SORACÁ",
+    "Nombre": "Soracá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15763,
+    "NOMBRE_MUNICIPIO": "SOTAQUIRÁ",
+    "Nombre": "Sotaquirá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15774,
+    "NOMBRE_MUNICIPIO": "SUSACÓN",
+    "Nombre": "Susacón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15776,
+    "NOMBRE_MUNICIPIO": "SUTAMARCHÁN",
+    "Nombre": "Sutamarchán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15778,
+    "NOMBRE_MUNICIPIO": "SUTATENZA",
+    "Nombre": "Sutatenza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "VALDERRAMA",
+    "CODIGO_MUNICIPIO": 15790,
+    "NOMBRE_MUNICIPIO": "TASCO",
+    "Nombre": "Tasco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 15798,
+    "NOMBRE_MUNICIPIO": "TENZA",
+    "Nombre": "Tenza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15804,
+    "NOMBRE_MUNICIPIO": "TIBANÁ",
+    "Nombre": "Tibaná"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15806,
+    "NOMBRE_MUNICIPIO": "TIBASOSA",
+    "Nombre": "Tibasosa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15808,
+    "NOMBRE_MUNICIPIO": "TINJACÁ",
+    "Nombre": "Tinjacá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 15810,
+    "NOMBRE_MUNICIPIO": "TIPACOQUE",
+    "Nombre": "Tipacoque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15814,
+    "NOMBRE_MUNICIPIO": "TOCA",
+    "Nombre": "Toca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15816,
+    "NOMBRE_MUNICIPIO": "TOGÜÍ",
+    "Nombre": "Togüí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15820,
+    "NOMBRE_MUNICIPIO": "TÓPAGA",
+    "Nombre": "Tópaga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "SUGAMUXI",
+    "CODIGO_MUNICIPIO": 15822,
+    "NOMBRE_MUNICIPIO": "TOTA",
+    "Nombre": "Tota"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15001,
+    "NOMBRE_MUNICIPIO": "TUNJA",
+    "Nombre": "Tunja"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 15832,
+    "NOMBRE_MUNICIPIO": "TUNUNGUÁ",
+    "Nombre": "Tununguá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15835,
+    "NOMBRE_MUNICIPIO": "TURMEQUÉ",
+    "Nombre": "Turmequé"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15837,
+    "NOMBRE_MUNICIPIO": "TUTA",
+    "Nombre": "Tuta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "TUNDAMA",
+    "CODIGO_MUNICIPIO": 15839,
+    "NOMBRE_MUNICIPIO": "TUTAZÁ",
+    "Nombre": "Tutazá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15842,
+    "NOMBRE_MUNICIPIO": "UMBITA",
+    "Nombre": "Umbita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 15861,
+    "NOMBRE_MUNICIPIO": "VENTAQUEMADA",
+    "Nombre": "Ventaquemada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "RICAURTE",
+    "CODIGO_MUNICIPIO": 15407,
+    "NOMBRE_MUNICIPIO": "VILLA DE LEYVA",
+    "Nombre": "Villa De Leyva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "MARQUEZ",
+    "CODIGO_MUNICIPIO": 15879,
+    "NOMBRE_MUNICIPIO": "VIRACACHÁ",
+    "Nombre": "Viracachá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "BOYACÁ",
+    "PROVINCIA": "LENGUPA",
+    "CODIGO_MUNICIPIO": 15897,
+    "NOMBRE_MUNICIPIO": "ZETAQUIRA",
+    "Nombre": "Zetaquira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 17013,
+    "NOMBRE_MUNICIPIO": "AGUADAS",
+    "Nombre": "Aguadas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "BAJO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17042,
+    "NOMBRE_MUNICIPIO": "ANSERMA",
+    "Nombre": "Anserma"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 17050,
+    "NOMBRE_MUNICIPIO": "ARANZAZU",
+    "Nombre": "Aranzazu"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "BAJO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17088,
+    "NOMBRE_MUNICIPIO": "BELALCÁZAR",
+    "Nombre": "Belalcázar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 17174,
+    "NOMBRE_MUNICIPIO": "CHINCHINa",
+    "Nombre": "Chinchina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17272,
+    "NOMBRE_MUNICIPIO": "FILADELFIA",
+    "Nombre": "Filadelfia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 17380,
+    "NOMBRE_MUNICIPIO": "LA DORADA",
+    "Nombre": "La Dorada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17388,
+    "NOMBRE_MUNICIPIO": "LA MERCED",
+    "Nombre": "La Merced"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 17001,
+    "NOMBRE_MUNICIPIO": "MANIZALES",
+    "Nombre": "Manizales"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO ORIENTE",
+    "CODIGO_MUNICIPIO": 17433,
+    "NOMBRE_MUNICIPIO": "MANZANARES",
+    "Nombre": "Manzanares"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17442,
+    "NOMBRE_MUNICIPIO": "MARMATO",
+    "Nombre": "Marmato"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO ORIENTE",
+    "CODIGO_MUNICIPIO": 17444,
+    "NOMBRE_MUNICIPIO": "MARQUETALIA",
+    "Nombre": "Marquetalia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO ORIENTE",
+    "CODIGO_MUNICIPIO": 17446,
+    "NOMBRE_MUNICIPIO": "MARULANDA",
+    "Nombre": "Marulanda"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 17486,
+    "NOMBRE_MUNICIPIO": "NEIRA",
+    "Nombre": "Neira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 17495,
+    "NOMBRE_MUNICIPIO": "NORCASIA",
+    "Nombre": "Norcasia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 17513,
+    "NOMBRE_MUNICIPIO": "PÁCORA",
+    "Nombre": "Pácora"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 17524,
+    "NOMBRE_MUNICIPIO": "PALESTINA",
+    "Nombre": "Palestina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO ORIENTE",
+    "CODIGO_MUNICIPIO": 17541,
+    "NOMBRE_MUNICIPIO": "PENSILVANIA",
+    "Nombre": "Pensilvania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17614,
+    "NOMBRE_MUNICIPIO": "RIOSUCIO",
+    "Nombre": "Riosucio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "BAJO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17616,
+    "NOMBRE_MUNICIPIO": "RISARALDA",
+    "Nombre": "Risaralda"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 17653,
+    "NOMBRE_MUNICIPIO": "SALAMINA",
+    "Nombre": "Salamina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 17662,
+    "NOMBRE_MUNICIPIO": "SAMANÁ",
+    "Nombre": "Samaná"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "BAJO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17665,
+    "NOMBRE_MUNICIPIO": "SAN JOSÉ",
+    "Nombre": "San José"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ALTO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17777,
+    "NOMBRE_MUNICIPIO": "SUPÍA",
+    "Nombre": "Supía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 17867,
+    "NOMBRE_MUNICIPIO": "VICTORIA",
+    "Nombre": "Victoria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 17873,
+    "NOMBRE_MUNICIPIO": "VILLAMARiA",
+    "Nombre": "Villamaria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CALDAS",
+    "PROVINCIA": "BAJO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 17877,
+    "NOMBRE_MUNICIPIO": "VITERBO",
+    "Nombre": "Viterbo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18029,
+    "NOMBRE_MUNICIPIO": "ALBANIA",
+    "Nombre": "Albania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18094,
+    "NOMBRE_MUNICIPIO": "BELÉN DE LOS ANDAQU Belén De Los Andaquies"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18150,
+    "NOMBRE_MUNICIPIO": "CARTAGENA DEL CHAIRÁ",
+    "Nombre": "Cartagena Del Chairá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18205,
+    "NOMBRE_MUNICIPIO": "CURRILLO",
+    "Nombre": "Currillo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18247,
+    "NOMBRE_MUNICIPIO": "EL DONCELLO",
+    "Nombre": "El Doncello"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18256,
+    "NOMBRE_MUNICIPIO": "EL PAUJIL",
+    "Nombre": "El Paujil"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18001,
+    "NOMBRE_MUNICIPIO": "FLORENCIA",
+    "Nombre": "Florencia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18410,
+    "NOMBRE_MUNICIPIO": "LA MONTAÑITA",
+    "Nombre": "La Montañita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18460,
+    "NOMBRE_MUNICIPIO": "MILaN",
+    "Nombre": "Milan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18479,
+    "NOMBRE_MUNICIPIO": "MORELIA",
+    "Nombre": "Morelia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18592,
+    "NOMBRE_MUNICIPIO": "PUERTO RICO",
+    "Nombre": "Puerto Rico"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18610,
+    "NOMBRE_MUNICIPIO": "SAN JOSE DEL FRAGUA San Jose Del Fragua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18753,
+    "NOMBRE_MUNICIPIO": "SAN VICENTE DEL CAGU",
+    "Nombre": "San Vicente Del Caguán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18756,
+    "NOMBRE_MUNICIPIO": "SOLANO",
+    "Nombre": "Solano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18785,
+    "NOMBRE_MUNICIPIO": "SOLITA",
+    "Nombre": "Solita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAQUETA",
+    "PROVINCIA": "CAQUETA",
+    "CODIGO_MUNICIPIO": 18860,
+    "NOMBRE_MUNICIPIO": "VALPARAISO",
+    "Nombre": "Valparaiso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85010,
+    "NOMBRE_MUNICIPIO": "AGUAZUL",
+    "Nombre": "Aguazul"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85015,
+    "NOMBRE_MUNICIPIO": "CHAMEZA",
+    "Nombre": "Chameza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85125,
+    "NOMBRE_MUNICIPIO": "HATO COROZAL",
+    "Nombre": "Hato Corozal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85136,
+    "NOMBRE_MUNICIPIO": "LA SALINA",
+    "Nombre": "La Salina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85139,
+    "NOMBRE_MUNICIPIO": "MANÍ",
+    "Nombre": "Maní"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85162,
+    "NOMBRE_MUNICIPIO": "MONTERREY",
+    "Nombre": "Monterrey"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85225,
+    "NOMBRE_MUNICIPIO": "NUNCHÍA",
+    "Nombre": "Nunchía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85230,
+    "NOMBRE_MUNICIPIO": "OROCUÉ",
+    "Nombre": "Orocué"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85250,
+    "NOMBRE_MUNICIPIO": "PAZ DE ARIPORO",
+    "Nombre": "Paz De Ariporo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85263,
+    "NOMBRE_MUNICIPIO": "PORE",
+    "Nombre": "Pore"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85279,
+    "NOMBRE_MUNICIPIO": "RECETOR",
+    "Nombre": "Recetor"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85300,
+    "NOMBRE_MUNICIPIO": "SABANALARGA",
+    "Nombre": "Sabanalarga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85315,
+    "NOMBRE_MUNICIPIO": "SÁCAMA",
+    "Nombre": "Sácama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85325,
+    "NOMBRE_MUNICIPIO": "SAN LUIS DE PALENQUE",
+    "Nombre": "San Luis De Palenque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85400,
+    "NOMBRE_MUNICIPIO": "TÁMARA",
+    "Nombre": "Támara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85410,
+    "NOMBRE_MUNICIPIO": "TAURAMENA",
+    "Nombre": "Tauramena"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85430,
+    "NOMBRE_MUNICIPIO": "TRINIDAD",
+    "Nombre": "Trinidad"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85440,
+    "NOMBRE_MUNICIPIO": "VILLANUEVA",
+    "Nombre": "Villanueva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CASANARE",
+    "PROVINCIA": "CASANARE",
+    "CODIGO_MUNICIPIO": 85001,
+    "NOMBRE_MUNICIPIO": "YOPAL",
+    "Nombre": "Yopal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 19022,
+    "NOMBRE_MUNICIPIO": "ALMAGUER",
+    "Nombre": "Almaguer"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 19050,
+    "NOMBRE_MUNICIPIO": "ARGELIA",
+    "Nombre": "Argelia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 19075,
+    "NOMBRE_MUNICIPIO": "BALBOA",
+    "Nombre": "Balboa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 19100,
+    "NOMBRE_MUNICIPIO": "BOLÍVAR",
+    "Nombre": "Bolívar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19110,
+    "NOMBRE_MUNICIPIO": "BUENOS AIRES",
+    "Nombre": "Buenos Aires"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19130,
+    "NOMBRE_MUNICIPIO": "CAJIBÍO",
+    "Nombre": "Cajibío"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19137,
+    "NOMBRE_MUNICIPIO": "CALDONO",
+    "Nombre": "Caldono"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19142,
+    "NOMBRE_MUNICIPIO": "CALOTO",
+    "Nombre": "Caloto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19212,
+    "NOMBRE_MUNICIPIO": "CORINTO",
+    "Nombre": "Corinto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19256,
+    "NOMBRE_MUNICIPIO": "EL TAMBO",
+    "Nombre": "El Tambo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 19290,
+    "NOMBRE_MUNICIPIO": "FLORENCIA",
+    "Nombre": "Florencia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 19318,
+    "NOMBRE_MUNICIPIO": "GUAPI",
+    "Nombre": "Guapi"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19355,
+    "NOMBRE_MUNICIPIO": "INZÁ",
+    "Nombre": "Inzá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19364,
+    "NOMBRE_MUNICIPIO": "JAMBALO",
+    "Nombre": "Jambalo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19392,
+    "NOMBRE_MUNICIPIO": "LA SIERRA",
+    "Nombre": "La Sierra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 19397,
+    "NOMBRE_MUNICIPIO": "LA VEGA",
+    "Nombre": "La Vega"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 19418,
+    "NOMBRE_MUNICIPIO": "LOPEZ",
+    "Nombre": "Lopez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR ",
+    "CODIGO_MUNICIPIO": 19450,
+    "NOMBRE_MUNICIPIO": "MERCADERES",
+    "Nombre": "Mercaderes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19455,
+    "NOMBRE_MUNICIPIO": "MIRANDA",
+    "Nombre": "Miranda"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19473,
+    "NOMBRE_MUNICIPIO": "MORALES",
+    "Nombre": "Morales"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19513,
+    "NOMBRE_MUNICIPIO": "PADILLA",
+    "Nombre": "Padilla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19517,
+    "NOMBRE_MUNICIPIO": "PAEZ",
+    "Nombre": "Paez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR ",
+    "CODIGO_MUNICIPIO": 19532,
+    "NOMBRE_MUNICIPIO": "PATIA",
+    "Nombre": "Patia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR ",
+    "CODIGO_MUNICIPIO": 19533,
+    "NOMBRE_MUNICIPIO": "PIAMONTE",
+    "Nombre": "Piamonte"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19548,
+    "NOMBRE_MUNICIPIO": "PIENDAMO",
+    "Nombre": "Piendamo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19001,
+    "NOMBRE_MUNICIPIO": "POPAYÁN",
+    "Nombre": "Popayán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19573,
+    "NOMBRE_MUNICIPIO": "PUERTO TEJADA",
+    "Nombre": "Puerto Tejada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19585,
+    "NOMBRE_MUNICIPIO": "PURACE",
+    "Nombre": "Purace"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19622,
+    "NOMBRE_MUNICIPIO": "ROSAS",
+    "Nombre": "Rosas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR ",
+    "CODIGO_MUNICIPIO": 19693,
+    "NOMBRE_MUNICIPIO": "SAN SEBASTIAN",
+    "Nombre": "San Sebastian"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR ",
+    "CODIGO_MUNICIPIO": 19701,
+    "NOMBRE_MUNICIPIO": "SANTA ROSA",
+    "Nombre": "Santa Rosa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19698,
+    "NOMBRE_MUNICIPIO": "SANTANDER DE QUILICH",
+    "Nombre": "Santander De Quilichao"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19743,
+    "NOMBRE_MUNICIPIO": "Silvia",
+    "Nombre": "Silvia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19760,
+    "NOMBRE_MUNICIPIO": "SOTARA",
+    "Nombre": "Sotara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19780,
+    "NOMBRE_MUNICIPIO": "SUAREZ",
+    "Nombre": "Suarez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "SUR ",
+    "CODIGO_MUNICIPIO": 19785,
+    "NOMBRE_MUNICIPIO": "SUCRE",
+    "Nombre": "Sucre"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 19807,
+    "NOMBRE_MUNICIPIO": "TIMBIO",
+    "Nombre": "Timbio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 19809,
+    "NOMBRE_MUNICIPIO": "TIMBIQUI",
+    "Nombre": "Timbiqui"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19821,
+    "NOMBRE_MUNICIPIO": "TORIBIO",
+    "Nombre": "Toribio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 19824,
+    "NOMBRE_MUNICIPIO": "TOTORO",
+    "Nombre": "Totoro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 19845,
+    "NOMBRE_MUNICIPIO": "VILLA RICA",
+    "Nombre": "Villa Rica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20011,
+    "NOMBRE_MUNICIPIO": "AGUACHICA",
+    "Nombre": "Aguachica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 20013,
+    "NOMBRE_MUNICIPIO": "AGUSTÍN CODAZZI",
+    "Nombre": "Agustín Codazzi"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NOROCCIDENTAL",
+    "CODIGO_MUNICIPIO": 20032,
+    "NOMBRE_MUNICIPIO": "ASTREA",
+    "Nombre": "Astrea"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "CENTRAL",
+    "CODIGO_MUNICIPIO": 20045,
+    "NOMBRE_MUNICIPIO": "BECERRIL",
+    "Nombre": "Becerril"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NOROCCIDENTAL",
+    "CODIGO_MUNICIPIO": 20060,
+    "NOMBRE_MUNICIPIO": "BOSCONIA",
+    "Nombre": "Bosconia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "CENTRAL",
+    "CODIGO_MUNICIPIO": 20175,
+    "NOMBRE_MUNICIPIO": "CHIMICHAGUA",
+    "Nombre": "Chimichagua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "CENTRAL",
+    "CODIGO_MUNICIPIO": 20178,
+    "NOMBRE_MUNICIPIO": "CHIRIGUANA",
+    "Nombre": "Chiriguana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "CENTRAL",
+    "CODIGO_MUNICIPIO": 20228,
+    "NOMBRE_MUNICIPIO": "CURUMANÍ",
+    "Nombre": "Curumaní"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NOROCCIDENTAL",
+    "CODIGO_MUNICIPIO": 20238,
+    "NOMBRE_MUNICIPIO": "EL COPEY",
+    "Nombre": "El Copey"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NOROCCIDENTAL",
+    "CODIGO_MUNICIPIO": 20250,
+    "NOMBRE_MUNICIPIO": "EL PASO",
+    "Nombre": "El Paso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20295,
+    "NOMBRE_MUNICIPIO": "GAMARRA",
+    "Nombre": "Gamarra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20310,
+    "NOMBRE_MUNICIPIO": "GONZÁLEZ",
+    "Nombre": "González"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20383,
+    "NOMBRE_MUNICIPIO": "LA GLORIA",
+    "Nombre": "La Gloria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "CENTRAL",
+    "CODIGO_MUNICIPIO": 20400,
+    "NOMBRE_MUNICIPIO": "LA JAGUA DE IBIRICO",
+    "Nombre": "La Jagua De Ibirico"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 20621,
+    "NOMBRE_MUNICIPIO": "LA PAZ",
+    "Nombre": "La Paz"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 20443,
+    "NOMBRE_MUNICIPIO": "MANAURE",
+    "Nombre": "Manaure"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "CENTRAL",
+    "CODIGO_MUNICIPIO": 20517,
+    "NOMBRE_MUNICIPIO": "PAILITAS",
+    "Nombre": "Pailitas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20550,
+    "NOMBRE_MUNICIPIO": "PELAYA",
+    "Nombre": "Pelaya"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 20570,
+    "NOMBRE_MUNICIPIO": "PUEBLO BELLO",
+    "Nombre": "Pueblo Bello"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20614,
+    "NOMBRE_MUNICIPIO": "RÍO DE ORO",
+    "Nombre": "Río De Oro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20710,
+    "NOMBRE_MUNICIPIO": "SAN ALBERTO",
+    "Nombre": "San Alberto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 20750,
+    "NOMBRE_MUNICIPIO": "SAN DIEGO",
+    "Nombre": "San Diego"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 20770,
+    "NOMBRE_MUNICIPIO": "SAN MARTÍN",
+    "Nombre": "San Martín"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "CENTRAL",
+    "CODIGO_MUNICIPIO": 20787,
+    "NOMBRE_MUNICIPIO": "TAMALAMEQUE",
+    "Nombre": "Tamalameque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CESAR",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 20001,
+    "NOMBRE_MUNICIPIO": "VALLEDUPAR",
+    "Nombre": "Valledupar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "DARIEN",
+    "CODIGO_MUNICIPIO": 27006,
+    "NOMBRE_MUNICIPIO": "ACANDÍ",
+    "Nombre": "Acandí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "PACIFICO SUR",
+    "CODIGO_MUNICIPIO": 27025,
+    "NOMBRE_MUNICIPIO": "ALTO BAUDÓ",
+    "Nombre": "Alto Baudó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27050,
+    "NOMBRE_MUNICIPIO": "ATRATO",
+    "Nombre": "Atrato"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27073,
+    "NOMBRE_MUNICIPIO": "BAGADÓ",
+    "Nombre": "Bagadó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "PACIFICO NORTE",
+    "CODIGO_MUNICIPIO": 27075,
+    "NOMBRE_MUNICIPIO": "BAHÍA SOLANO",
+    "Nombre": "Bahía Solano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "PACIFICO SUR",
+    "CODIGO_MUNICIPIO": 27077,
+    "NOMBRE_MUNICIPIO": "BAJO BAUDÓ",
+    "Nombre": "Bajo Baudó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "DARIEN",
+    "CODIGO_MUNICIPIO": 27086,
+    "NOMBRE_MUNICIPIO": "BELÉN DE BAJIRA",
+    "Nombre": "Belén De Bajira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27099,
+    "NOMBRE_MUNICIPIO": "BOJAYA",
+    "Nombre": "Bojaya"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27135,
+    "NOMBRE_MUNICIPIO": "CANTON DE SAN PABLO Canton De San Pablo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "DARIEN",
+    "CODIGO_MUNICIPIO": 27150,
+    "NOMBRE_MUNICIPIO": "CARMÉN DEL DARIÉN",
+    "Nombre": "Carmén Del Darién"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27160,
+    "NOMBRE_MUNICIPIO": "CERTEGUI",
+    "Nombre": "Certegui"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27205,
+    "NOMBRE_MUNICIPIO": "CONDOTO",
+    "Nombre": "Condoto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27245,
+    "NOMBRE_MUNICIPIO": "EL CARMEN DE ATRATO El Carmen De Atrato"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "PACIFICO SUR",
+    "CODIGO_MUNICIPIO": 27250,
+    "NOMBRE_MUNICIPIO": "El Litoral del San Juan",
+    "Nombre": "El Litoral Del San Juan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27361,
+    "NOMBRE_MUNICIPIO": "ITSMINA",
+    "Nombre": "Itsmina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "PACIFICO NORTE",
+    "CODIGO_MUNICIPIO": 27372,
+    "NOMBRE_MUNICIPIO": "JURADÓ",
+    "Nombre": "Juradó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27413,
+    "NOMBRE_MUNICIPIO": "LLORÓ",
+    "Nombre": "Lloró"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27425,
+    "NOMBRE_MUNICIPIO": "MEDIO ATRATO",
+    "Nombre": "Medio Atrato"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "PACIFICO SUR",
+    "CODIGO_MUNICIPIO": 27430,
+    "NOMBRE_MUNICIPIO": "MEDIO BAUDÓ",
+    "Nombre": "Medio Baudó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27450,
+    "NOMBRE_MUNICIPIO": "MEDIO SAN JUAN",
+    "Nombre": "Medio San Juan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27491,
+    "NOMBRE_MUNICIPIO": "NÓVITA",
+    "Nombre": "Nóvita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "PACIFICO NORTE",
+    "CODIGO_MUNICIPIO": 27495,
+    "NOMBRE_MUNICIPIO": "NUQUÍ",
+    "Nombre": "Nuquí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27001,
+    "NOMBRE_MUNICIPIO": "QUIBDÓ",
+    "Nombre": "Quibdó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27580,
+    "NOMBRE_MUNICIPIO": "RÍO FRÍO",
+    "Nombre": "Río Frío"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "ATRATO",
+    "CODIGO_MUNICIPIO": 27600,
+    "NOMBRE_MUNICIPIO": "RIO QUITO",
+    "Nombre": "Rio Quito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "DARIEN",
+    "CODIGO_MUNICIPIO": 27615,
+    "NOMBRE_MUNICIPIO": "RIOSUCIO",
+    "Nombre": "Riosucio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27660,
+    "NOMBRE_MUNICIPIO": "SAN JOSÉ DEL PALMAR",
+    "Nombre": "San José Del Palmar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27745,
+    "NOMBRE_MUNICIPIO": "SIPÍ",
+    "Nombre": "Sipí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27787,
+    "NOMBRE_MUNICIPIO": "TADÓ",
+    "Nombre": "Tadó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "DARIEN",
+    "CODIGO_MUNICIPIO": 27800,
+    "NOMBRE_MUNICIPIO": "UNGUÍA",
+    "Nombre": "Unguía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CHOCO",
+    "PROVINCIA": "SAN JUAN",
+    "CODIGO_MUNICIPIO": 27810,
+    "NOMBRE_MUNICIPIO": "UNION PANAMERICANA",
+    "Nombre": "Union Panamericana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 23068,
+    "NOMBRE_MUNICIPIO": "AYAPEL",
+    "Nombre": "Ayapel"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 23079,
+    "NOMBRE_MUNICIPIO": "BUENAVISTA",
+    "Nombre": "Buenavista"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "COSTANERA",
+    "CODIGO_MUNICIPIO": 23090,
+    "NOMBRE_MUNICIPIO": "CANALETE",
+    "Nombre": "Canalete"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SINU MEDIO",
+    "CODIGO_MUNICIPIO": 23162,
+    "NOMBRE_MUNICIPIO": "CERETÉ",
+    "Nombre": "Cereté"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "BAJO SINU",
+    "CODIGO_MUNICIPIO": 23168,
+    "NOMBRE_MUNICIPIO": "CHIMÁ",
+    "Nombre": "Chimá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 23182,
+    "NOMBRE_MUNICIPIO": "CHINÚ",
+    "Nombre": "Chinú"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SINU MEDIO",
+    "CODIGO_MUNICIPIO": 23189,
+    "NOMBRE_MUNICIPIO": "CIÉNAGA DE ORO",
+    "Nombre": "Ciénaga De Oro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "BAJO SINU",
+    "CODIGO_MUNICIPIO": 23300,
+    "NOMBRE_MUNICIPIO": "COTORRA",
+    "Nombre": "Cotorra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 23350,
+    "NOMBRE_MUNICIPIO": "LA APARTADA",
+    "Nombre": "La Apartada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "BAJO SINU",
+    "CODIGO_MUNICIPIO": 23417,
+    "NOMBRE_MUNICIPIO": "LORICA",
+    "Nombre": "Lorica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "COSTANERA",
+    "CODIGO_MUNICIPIO": 23419,
+    "NOMBRE_MUNICIPIO": "LOS CÓRDOBAS",
+    "Nombre": "Los Córdobas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "BAJO SINU",
+    "CODIGO_MUNICIPIO": 23464,
+    "NOMBRE_MUNICIPIO": "MOMIL",
+    "Nombre": "Momil"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 23466,
+    "NOMBRE_MUNICIPIO": "MONTELÍBANO",
+    "Nombre": "Montelíbano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 23001,
+    "NOMBRE_MUNICIPIO": "MONTERÍA",
+    "Nombre": "Montería"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "COSTANERA",
+    "CODIGO_MUNICIPIO": 23500,
+    "NOMBRE_MUNICIPIO": "MOÑITOS",
+    "Nombre": "Moñitos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 23555,
+    "NOMBRE_MUNICIPIO": "PLANETA RICA",
+    "Nombre": "Planeta Rica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 23570,
+    "NOMBRE_MUNICIPIO": "PUEBLO NUEVO",
+    "Nombre": "Pueblo Nuevo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "COSTANERA",
+    "CODIGO_MUNICIPIO": 23574,
+    "NOMBRE_MUNICIPIO": "PUERTO ESCONDIDO",
+    "Nombre": "Puerto Escondido"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 23580,
+    "NOMBRE_MUNICIPIO": "PUERTO LIBERTADOR",
+    "Nombre": "Puerto Libertador"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "BAJO SINU",
+    "CODIGO_MUNICIPIO": 23586,
+    "NOMBRE_MUNICIPIO": "PURÍSIMA",
+    "Nombre": "Purísima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 23660,
+    "NOMBRE_MUNICIPIO": "SAHAGÚN",
+    "Nombre": "Sahagún"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 23670,
+    "NOMBRE_MUNICIPIO": "SAN ANDRÉS SOTAVENT",
+    "Nombre": "San Andrés Sotavento"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "COSTANERA",
+    "CODIGO_MUNICIPIO": 23672,
+    "NOMBRE_MUNICIPIO": "SAN ANTERO",
+    "Nombre": "San Antero"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "COSTANERA",
+    "CODIGO_MUNICIPIO": 23675,
+    "NOMBRE_MUNICIPIO": "SAN BERNARDO DEL VIE",
+    "Nombre": "San Bernardo Del Viento"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SINU MEDIO",
+    "CODIGO_MUNICIPIO": 23678,
+    "NOMBRE_MUNICIPIO": "SAN CARLOS",
+    "Nombre": "San Carlos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "SINU MEDIO",
+    "CODIGO_MUNICIPIO": 23686,
+    "NOMBRE_MUNICIPIO": "SAN PELAYO",
+    "Nombre": "San Pelayo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "ALTO SINU",
+    "CODIGO_MUNICIPIO": 23807,
+    "NOMBRE_MUNICIPIO": "TIERRALTA",
+    "Nombre": "Tierralta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CORDOBA",
+    "PROVINCIA": "ALTO SINU",
+    "CODIGO_MUNICIPIO": 23855,
+    "NOMBRE_MUNICIPIO": "VALENCIA",
+    "Nombre": "Valencia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25001,
+    "NOMBRE_MUNICIPIO": "AGUA DE DIOS",
+    "Nombre": "Agua De Dios"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25019,
+    "NOMBRE_MUNICIPIO": "ALBÁN",
+    "Nombre": "Albán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25035,
+    "NOMBRE_MUNICIPIO": "ANAPOIMA",
+    "Nombre": "Anapoima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25040,
+    "NOMBRE_MUNICIPIO": "ANOLAIMA",
+    "Nombre": "Anolaima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25599,
+    "NOMBRE_MUNICIPIO": "APULO",
+    "Nombre": "Apulo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25053,
+    "NOMBRE_MUNICIPIO": "ARBELÁEZ",
+    "Nombre": "Arbeláez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MAGDALENA CENTRO",
+    "CODIGO_MUNICIPIO": 25086,
+    "NOMBRE_MUNICIPIO": "BELTRÁN",
+    "Nombre": "Beltrán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MAGDALENA CENTRO",
+    "CODIGO_MUNICIPIO": 25095,
+    "NOMBRE_MUNICIPIO": "BITUIMA",
+    "Nombre": "Bituima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25099,
+    "NOMBRE_MUNICIPIO": "BOJACÁ",
+    "Nombre": "Bojacá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25120,
+    "NOMBRE_MUNICIPIO": "CABRERA",
+    "Nombre": "Cabrera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25123,
+    "NOMBRE_MUNICIPIO": "CACHIPAY",
+    "Nombre": "Cachipay"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25126,
+    "NOMBRE_MUNICIPIO": "CAJICÁ",
+    "Nombre": "Cajicá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "BAJO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25148,
+    "NOMBRE_MUNICIPIO": "CAPARRAPÍ",
+    "Nombre": "Caparrapí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25151,
+    "NOMBRE_MUNICIPIO": "CAQUEZA",
+    "Nombre": "Caqueza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25154,
+    "NOMBRE_MUNICIPIO": "CARMEN DE CARUPA",
+    "Nombre": "Carmen De Carupa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MAGDALENA CENTRO",
+    "CODIGO_MUNICIPIO": 25168,
+    "NOMBRE_MUNICIPIO": "CHAGUANÍ",
+    "Nombre": "Chaguaní"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25175,
+    "NOMBRE_MUNICIPIO": "CHÍA",
+    "Nombre": "Chía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25178,
+    "NOMBRE_MUNICIPIO": "CHIPAQUE",
+    "Nombre": "Chipaque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25181,
+    "NOMBRE_MUNICIPIO": "CHOACHÍ",
+    "Nombre": "Choachí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALMEIDAS",
+    "CODIGO_MUNICIPIO": 25183,
+    "NOMBRE_MUNICIPIO": "CHOCONTÁ",
+    "Nombre": "Chocontá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25200,
+    "NOMBRE_MUNICIPIO": "COGUA",
+    "Nombre": "Cogua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25214,
+    "NOMBRE_MUNICIPIO": "COTA",
+    "Nombre": "Cota"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25224,
+    "NOMBRE_MUNICIPIO": "CUCUNUBÁ",
+    "Nombre": "Cucunubá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25245,
+    "NOMBRE_MUNICIPIO": "EL COLEGIO",
+    "Nombre": "El Colegio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25258,
+    "NOMBRE_MUNICIPIO": "EL PEÑÓN",
+    "Nombre": "El Peñón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25260,
+    "NOMBRE_MUNICIPIO": "EL ROSAL",
+    "Nombre": "El Rosal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25269,
+    "NOMBRE_MUNICIPIO": "FACATATIVÁ",
+    "Nombre": "Facatativá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25279,
+    "NOMBRE_MUNICIPIO": "FOMEQUE",
+    "Nombre": "Fomeque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25281,
+    "NOMBRE_MUNICIPIO": "FOSCA",
+    "Nombre": "Fosca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25286,
+    "NOMBRE_MUNICIPIO": "FUNZA",
+    "Nombre": "Funza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25288,
+    "NOMBRE_MUNICIPIO": "FÚQUENE",
+    "Nombre": "Fúquene"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25290,
+    "NOMBRE_MUNICIPIO": "FUSAGASUGÁ",
+    "Nombre": "Fusagasugá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25293,
+    "NOMBRE_MUNICIPIO": "GACHALA",
+    "Nombre": "Gachala"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25295,
+    "NOMBRE_MUNICIPIO": "GACHANCIPÁ",
+    "Nombre": "Gachancipá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25297,
+    "NOMBRE_MUNICIPIO": "GACHETA",
+    "Nombre": "Gacheta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25299,
+    "NOMBRE_MUNICIPIO": "GAMA",
+    "Nombre": "Gama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25307,
+    "NOMBRE_MUNICIPIO": "GIRARDOT",
+    "Nombre": "Girardot"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25312,
+    "NOMBRE_MUNICIPIO": "GRANADA",
+    "Nombre": "Granada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25317,
+    "NOMBRE_MUNICIPIO": "GUACHETÁ",
+    "Nombre": "Guachetá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "BAJO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25320,
+    "NOMBRE_MUNICIPIO": "GUADUAS",
+    "Nombre": "Guaduas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25322,
+    "NOMBRE_MUNICIPIO": "GUASCA",
+    "Nombre": "Guasca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25324,
+    "NOMBRE_MUNICIPIO": "GUATAQUÍ",
+    "Nombre": "Guataquí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25326,
+    "NOMBRE_MUNICIPIO": "GUATAVITA",
+    "Nombre": "Guatavita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MAGDALENA CENTRO",
+    "CODIGO_MUNICIPIO": 25328,
+    "NOMBRE_MUNICIPIO": "GUAYABAL DE SIQUIMA",
+    "Nombre": "Guayabal De Siquima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25335,
+    "NOMBRE_MUNICIPIO": "GUAYABETAL",
+    "Nombre": "Guayabetal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25339,
+    "NOMBRE_MUNICIPIO": "GUTIÉRREZ",
+    "Nombre": "Gutiérrez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25368,
+    "NOMBRE_MUNICIPIO": "JERUSALÉN",
+    "Nombre": "Jerusalén"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25372,
+    "NOMBRE_MUNICIPIO": "JUNÍN",
+    "Nombre": "Junín"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25377,
+    "NOMBRE_MUNICIPIO": "LA CALERA",
+    "Nombre": "La Calera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25386,
+    "NOMBRE_MUNICIPIO": "LA MESA",
+    "Nombre": "La Mesa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25394,
+    "NOMBRE_MUNICIPIO": "LA PALMA",
+    "Nombre": "La Palma"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25398,
+    "NOMBRE_MUNICIPIO": "LA PEÑA",
+    "Nombre": "La Peña"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25402,
+    "NOMBRE_MUNICIPIO": "LA VEGA",
+    "Nombre": "La Vega"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25407,
+    "NOMBRE_MUNICIPIO": "LENGUAZAQUE",
+    "Nombre": "Lenguazaque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALMEIDAS",
+    "CODIGO_MUNICIPIO": 25426,
+    "NOMBRE_MUNICIPIO": "MACHETA",
+    "Nombre": "Macheta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25430,
+    "NOMBRE_MUNICIPIO": "MADRID",
+    "Nombre": "Madrid"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALMEIDAS",
+    "CODIGO_MUNICIPIO": 25436,
+    "NOMBRE_MUNICIPIO": "MANTA",
+    "Nombre": "Manta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MEDINA",
+    "CODIGO_MUNICIPIO": 25438,
+    "NOMBRE_MUNICIPIO": "MEDINA",
+    "Nombre": "Medina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25473,
+    "NOMBRE_MUNICIPIO": "MOSQUERA",
+    "Nombre": "Mosquera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25483,
+    "NOMBRE_MUNICIPIO": "NARIÑO",
+    "Nombre": "Nariño"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25486,
+    "NOMBRE_MUNICIPIO": "NEMOCoN",
+    "Nombre": "Nemocon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25488,
+    "NOMBRE_MUNICIPIO": "NILO",
+    "Nombre": "Nilo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25489,
+    "NOMBRE_MUNICIPIO": "NIMAIMA",
+    "Nombre": "Nimaima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25491,
+    "NOMBRE_MUNICIPIO": "NOCAIMA",
+    "Nombre": "Nocaima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25513,
+    "NOMBRE_MUNICIPIO": "PACHO",
+    "Nombre": "Pacho"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25518,
+    "NOMBRE_MUNICIPIO": "PAIME",
+    "Nombre": "Paime"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25524,
+    "NOMBRE_MUNICIPIO": "PANDI",
+    "Nombre": "Pandi"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MEDINA",
+    "CODIGO_MUNICIPIO": 25530,
+    "NOMBRE_MUNICIPIO": "PARATEBUENO",
+    "Nombre": "Paratebueno"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25535,
+    "NOMBRE_MUNICIPIO": "PASCA",
+    "Nombre": "Pasca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "BAJO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25572,
+    "NOMBRE_MUNICIPIO": "PUERTO SALGAR",
+    "Nombre": "Puerto Salgar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MAGDALENA CENTRO",
+    "CODIGO_MUNICIPIO": 25580,
+    "NOMBRE_MUNICIPIO": "PULI",
+    "Nombre": "Puli"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25592,
+    "NOMBRE_MUNICIPIO": "QUEBRADANEGRA",
+    "Nombre": "Quebradanegra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25594,
+    "NOMBRE_MUNICIPIO": "QUETAME",
+    "Nombre": "Quetame"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25596,
+    "NOMBRE_MUNICIPIO": "QUIPILE",
+    "Nombre": "Quipile"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25612,
+    "NOMBRE_MUNICIPIO": "RICAURTE",
+    "Nombre": "Ricaurte"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25645,
+    "NOMBRE_MUNICIPIO": "SAN ANTONIO DE TEQUE",
+    "Nombre": "San Antonio De Tequendama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25649,
+    "NOMBRE_MUNICIPIO": "SAN BERNARDO",
+    "Nombre": "San Bernardo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25653,
+    "NOMBRE_MUNICIPIO": "SAN CAYETANO",
+    "Nombre": "San Cayetano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25658,
+    "NOMBRE_MUNICIPIO": "SAN FRANCISCO",
+    "Nombre": "San Francisco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MAGDALENA CENTRO",
+    "CODIGO_MUNICIPIO": 25662,
+    "NOMBRE_MUNICIPIO": "SAN JUAN DE RÍO SECO San Juan De Río Seco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25718,
+    "NOMBRE_MUNICIPIO": "SASAIMA",
+    "Nombre": "Sasaima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALMEIDAS",
+    "CODIGO_MUNICIPIO": 25736,
+    "NOMBRE_MUNICIPIO": "SESQUILÉ",
+    "Nombre": "Sesquilé"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SOACHA",
+    "CODIGO_MUNICIPIO": 25740,
+    "NOMBRE_MUNICIPIO": "SIBATÉ",
+    "Nombre": "Sibaté"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25743,
+    "NOMBRE_MUNICIPIO": "SILVANIA",
+    "Nombre": "Silvania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25745,
+    "NOMBRE_MUNICIPIO": "SIMIJACA",
+    "Nombre": "Simijaca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SOACHA",
+    "CODIGO_MUNICIPIO": 25754,
+    "NOMBRE_MUNICIPIO": "SOACHA",
+    "Nombre": "Soacha"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25758,
+    "NOMBRE_MUNICIPIO": "SOPÓ",
+    "Nombre": "Sopó"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25769,
+    "NOMBRE_MUNICIPIO": "SUBACHOQUE",
+    "Nombre": "Subachoque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALMEIDAS",
+    "CODIGO_MUNICIPIO": 25772,
+    "NOMBRE_MUNICIPIO": "SUESCA",
+    "Nombre": "Suesca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25777,
+    "NOMBRE_MUNICIPIO": "SUPATÁ",
+    "Nombre": "Supatá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25779,
+    "NOMBRE_MUNICIPIO": "SUSA",
+    "Nombre": "Susa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25781,
+    "NOMBRE_MUNICIPIO": "SUTATAUSA",
+    "Nombre": "Sutatausa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25785,
+    "NOMBRE_MUNICIPIO": "TABIO",
+    "Nombre": "Tabio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25793,
+    "NOMBRE_MUNICIPIO": "TAUSA",
+    "Nombre": "Tausa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25797,
+    "NOMBRE_MUNICIPIO": "TENA",
+    "Nombre": "Tena"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25799,
+    "NOMBRE_MUNICIPIO": "TENJO",
+    "Nombre": "Tenjo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25805,
+    "NOMBRE_MUNICIPIO": "TIBACUY",
+    "Nombre": "Tibacuy"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALMEIDAS",
+    "CODIGO_MUNICIPIO": 25807,
+    "NOMBRE_MUNICIPIO": "TIBIRITA",
+    "Nombre": "Tibirita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALTO MAGDALENA",
+    "CODIGO_MUNICIPIO": 25815,
+    "NOMBRE_MUNICIPIO": "TOCAIMA",
+    "Nombre": "Tocaima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25817,
+    "NOMBRE_MUNICIPIO": "TOCANCIPÁ",
+    "Nombre": "Tocancipá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25823,
+    "NOMBRE_MUNICIPIO": "TOPAIPI",
+    "Nombre": "Topaipi"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUAVIO",
+    "CODIGO_MUNICIPIO": 25839,
+    "NOMBRE_MUNICIPIO": "UBALÁ",
+    "Nombre": "Ubalá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25841,
+    "NOMBRE_MUNICIPIO": "UBAQUE",
+    "Nombre": "Ubaque"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "UBATE",
+    "CODIGO_MUNICIPIO": 25843,
+    "NOMBRE_MUNICIPIO": "UBATE",
+    "Nombre": "Ubate"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 25845,
+    "NOMBRE_MUNICIPIO": "UNE",
+    "Nombre": "Une"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25851,
+    "NOMBRE_MUNICIPIO": "ÚTICA",
+    "Nombre": "Útica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SUMAPAZ",
+    "CODIGO_MUNICIPIO": 25506,
+    "NOMBRE_MUNICIPIO": "VENECIA",
+    "Nombre": "Venecia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25862,
+    "NOMBRE_MUNICIPIO": "VERGARA",
+    "Nombre": "Vergara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "MAGDALENA CENTRO",
+    "CODIGO_MUNICIPIO": 25867,
+    "NOMBRE_MUNICIPIO": "VIANÍ",
+    "Nombre": "Vianí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25871,
+    "NOMBRE_MUNICIPIO": "VILLAGOMEZ",
+    "Nombre": "Villagomez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "ALMEIDAS",
+    "CODIGO_MUNICIPIO": 25873,
+    "NOMBRE_MUNICIPIO": "VILLAPINZÓN",
+    "Nombre": "Villapinzón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "GUALIVA",
+    "CODIGO_MUNICIPIO": 25875,
+    "NOMBRE_MUNICIPIO": "VILLETA",
+    "Nombre": "Villeta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "TEQUENDAMA",
+    "CODIGO_MUNICIPIO": 25878,
+    "NOMBRE_MUNICIPIO": "VIOTÁ",
+    "Nombre": "Viotá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "RIO NEGRO",
+    "CODIGO_MUNICIPIO": 25885,
+    "NOMBRE_MUNICIPIO": "YACOPÍ",
+    "Nombre": "Yacopí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA OCCIDENTE",
+    "CODIGO_MUNICIPIO": 25898,
+    "NOMBRE_MUNICIPIO": "ZIPACoN",
+    "Nombre": "Zipacon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA",
+    "PROVINCIA": "SABANA CENTRO",
+    "CODIGO_MUNICIPIO": 25899,
+    "NOMBRE_MUNICIPIO": "ZIPAQUIRÁ",
+    "Nombre": "Zipaquirá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94343,
+    "NOMBRE_MUNICIPIO": "BARRANCO MINA",
+    "Nombre": "Barranco Mina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94886,
+    "NOMBRE_MUNICIPIO": "CACAHUAL",
+    "Nombre": "Cacahual"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94001,
+    "NOMBRE_MUNICIPIO": "INÍRIDA",
+    "Nombre": "Inírida"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94885,
+    "NOMBRE_MUNICIPIO": "LA GUADALUPE",
+    "Nombre": "La Guadalupe"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94663,
+    "NOMBRE_MUNICIPIO": "MAPIRIPaN",
+    "Nombre": "Mapiripan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94888,
+    "NOMBRE_MUNICIPIO": "MORICHAL",
+    "Nombre": "Morichal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94887,
+    "NOMBRE_MUNICIPIO": "PANA PANA",
+    "Nombre": "Pana Pana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94884,
+    "NOMBRE_MUNICIPIO": "PUERTO COLOMBIA",
+    "Nombre": "Puerto Colombia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAINIA",
+    "PROVINCIA": "GUAINIA",
+    "CODIGO_MUNICIPIO": 94883,
+    "NOMBRE_MUNICIPIO": "SAN FELIPE",
+    "Nombre": "San Felipe"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAVIARE",
+    "PROVINCIA": "GUAVIARE",
+    "CODIGO_MUNICIPIO": 95015,
+    "NOMBRE_MUNICIPIO": "CALAMAR",
+    "Nombre": "Calamar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAVIARE",
+    "PROVINCIA": "GUAVIARE",
+    "CODIGO_MUNICIPIO": 95025,
+    "NOMBRE_MUNICIPIO": "EL RETORNO",
+    "Nombre": "El Retorno"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAVIARE",
+    "PROVINCIA": "GUAVIARE",
+    "CODIGO_MUNICIPIO": 95200,
+    "NOMBRE_MUNICIPIO": "MIRAFLORES",
+    "Nombre": "Miraflores"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "GUAVIARE",
+    "PROVINCIA": "GUAVIARE",
+    "CODIGO_MUNICIPIO": 95001,
+    "NOMBRE_MUNICIPIO": "SAN JOSÉ DEL GUAVIAR",
+    "Nombre": "San José Del Guaviare"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41006,
+    "NOMBRE_MUNICIPIO": "ACEVEDO",
+    "Nombre": "Acevedo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41013,
+    "NOMBRE_MUNICIPIO": "AGRADO",
+    "Nombre": "Agrado"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41016,
+    "NOMBRE_MUNICIPIO": "AIPE",
+    "Nombre": "Aipe"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41020,
+    "NOMBRE_MUNICIPIO": "ALGECIRAS",
+    "Nombre": "Algeciras"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41026,
+    "NOMBRE_MUNICIPIO": "ALTAMIRA",
+    "Nombre": "Altamira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41078,
+    "NOMBRE_MUNICIPIO": "BARAYA",
+    "Nombre": "Baraya"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41132,
+    "NOMBRE_MUNICIPIO": "CAMPOALEGRE",
+    "Nombre": "Campoalegre"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41206,
+    "NOMBRE_MUNICIPIO": "COLOMBIA",
+    "Nombre": "Colombia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41244,
+    "NOMBRE_MUNICIPIO": "ELÍAS",
+    "Nombre": "Elías"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41298,
+    "NOMBRE_MUNICIPIO": "GARZÓN",
+    "Nombre": "Garzón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41306,
+    "NOMBRE_MUNICIPIO": "GIGANTE",
+    "Nombre": "Gigante"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41319,
+    "NOMBRE_MUNICIPIO": "GUADALUPE",
+    "Nombre": "Guadalupe"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41349,
+    "NOMBRE_MUNICIPIO": "HOBO",
+    "Nombre": "Hobo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41357,
+    "NOMBRE_MUNICIPIO": "IQUIRA",
+    "Nombre": "Iquira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41359,
+    "NOMBRE_MUNICIPIO": "ISNOS",
+    "Nombre": "Isnos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 41378,
+    "NOMBRE_MUNICIPIO": "LA ARGENTINA",
+    "Nombre": "La Argentina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 41396,
+    "NOMBRE_MUNICIPIO": "LA PLATA",
+    "Nombre": "La Plata"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 41483,
+    "NOMBRE_MUNICIPIO": "NÁTAGA",
+    "Nombre": "Nátaga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41001,
+    "NOMBRE_MUNICIPIO": "NEIVA",
+    "Nombre": "Neiva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41503,
+    "NOMBRE_MUNICIPIO": "OPORAPA",
+    "Nombre": "Oporapa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 41518,
+    "NOMBRE_MUNICIPIO": "PAICOL",
+    "Nombre": "Paicol"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41524,
+    "NOMBRE_MUNICIPIO": "PALERMO",
+    "Nombre": "Palermo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41530,
+    "NOMBRE_MUNICIPIO": "PALESTINA",
+    "Nombre": "Palestina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41548,
+    "NOMBRE_MUNICIPIO": "PITAL",
+    "Nombre": "Pital"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41551,
+    "NOMBRE_MUNICIPIO": "PITALITO",
+    "Nombre": "Pitalito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41615,
+    "NOMBRE_MUNICIPIO": "RIVERA",
+    "Nombre": "Rivera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41660,
+    "NOMBRE_MUNICIPIO": "SALADOBLANCO",
+    "Nombre": "Saladoblanco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41668,
+    "NOMBRE_MUNICIPIO": "SAN AGUSTÍN",
+    "Nombre": "San Agustín"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41676,
+    "NOMBRE_MUNICIPIO": "SANTA MARÍA",
+    "Nombre": "Santa María"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41770,
+    "NOMBRE_MUNICIPIO": "SUAZA",
+    "Nombre": "Suaza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 41791,
+    "NOMBRE_MUNICIPIO": "TARQUI",
+    "Nombre": "Tarqui"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41799,
+    "NOMBRE_MUNICIPIO": "TELLO",
+    "Nombre": "Tello"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41801,
+    "NOMBRE_MUNICIPIO": "TERUEL",
+    "Nombre": "Teruel"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 41797,
+    "NOMBRE_MUNICIPIO": "TESALIA",
+    "Nombre": "Tesalia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 41807,
+    "NOMBRE_MUNICIPIO": "TIMANÁ",
+    "Nombre": "Timaná"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41872,
+    "NOMBRE_MUNICIPIO": "VILLAVIEJA",
+    "Nombre": "Villavieja"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "HUILA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 41885,
+    "NOMBRE_MUNICIPIO": "YAGUARÁ",
+    "Nombre": "Yaguará"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 44035,
+    "NOMBRE_MUNICIPIO": "ALBANIA",
+    "Nombre": "Albania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44078,
+    "NOMBRE_MUNICIPIO": "BARRANCAS",
+    "Nombre": "Barrancas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 44090,
+    "NOMBRE_MUNICIPIO": "DIBULLA",
+    "Nombre": "Dibulla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44098,
+    "NOMBRE_MUNICIPIO": "DISTRACCION",
+    "Nombre": "Distraccion"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44110,
+    "NOMBRE_MUNICIPIO": "EL MOLINO",
+    "Nombre": "El Molino"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44279,
+    "NOMBRE_MUNICIPIO": "FONSECA",
+    "Nombre": "Fonseca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44378,
+    "NOMBRE_MUNICIPIO": "HATONUEVO",
+    "Nombre": "Hatonuevo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44420,
+    "NOMBRE_MUNICIPIO": "LA JAGUA DEL PILAR",
+    "Nombre": "La Jagua Del Pilar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 44430,
+    "NOMBRE_MUNICIPIO": "MAICAO",
+    "Nombre": "Maicao"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 44560,
+    "NOMBRE_MUNICIPIO": "MANAURE",
+    "Nombre": "Manaure"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 44001,
+    "NOMBRE_MUNICIPIO": "RIOHACHA",
+    "Nombre": "Riohacha"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44650,
+    "NOMBRE_MUNICIPIO": "SAN JUAN DEL CESAR",
+    "Nombre": "San Juan Del Cesar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 44847,
+    "NOMBRE_MUNICIPIO": "URIBIA",
+    "Nombre": "Uribia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44855,
+    "NOMBRE_MUNICIPIO": "URUMITA",
+    "Nombre": "Urumita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "LA GUAJIRA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 44874,
+    "NOMBRE_MUNICIPIO": "VILLANUEVA",
+    "Nombre": "Villanueva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 47030,
+    "NOMBRE_MUNICIPIO": "ALGARROBO",
+    "Nombre": "Algarrobo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 47053,
+    "NOMBRE_MUNICIPIO": "ARACATACA",
+    "Nombre": "Aracataca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 47058,
+    "NOMBRE_MUNICIPIO": "ARIGUANÍ",
+    "Nombre": "Ariguaní"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47161,
+    "NOMBRE_MUNICIPIO": "CERRO SAN ANTONIO",
+    "Nombre": "Cerro San Antonio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 47170,
+    "NOMBRE_MUNICIPIO": "CHIBOLO",
+    "Nombre": "Chibolo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 47189,
+    "NOMBRE_MUNICIPIO": "CIÉNAGA",
+    "Nombre": "Ciénaga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47205,
+    "NOMBRE_MUNICIPIO": "CONCORDIA",
+    "Nombre": "Concordia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 47245,
+    "NOMBRE_MUNICIPIO": "EL BANCO",
+    "Nombre": "El Banco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47258,
+    "NOMBRE_MUNICIPIO": "EL PIÑON",
+    "Nombre": "El Piñon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 47268,
+    "NOMBRE_MUNICIPIO": "EL RETEN",
+    "Nombre": "El Reten"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 47288,
+    "NOMBRE_MUNICIPIO": "FUNDACION",
+    "Nombre": "Fundacion"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 47318,
+    "NOMBRE_MUNICIPIO": "GUAMAL",
+    "Nombre": "Guamal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 47460,
+    "NOMBRE_MUNICIPIO": "NUEVA GRANADA",
+    "Nombre": "Nueva Granada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47541,
+    "NOMBRE_MUNICIPIO": "PEDRAZA",
+    "Nombre": "Pedraza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 47545,
+    "NOMBRE_MUNICIPIO": "PIJIÑO DEL CARMEN",
+    "Nombre": "Pijiño Del Carmen"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47551,
+    "NOMBRE_MUNICIPIO": "PIVIJAY",
+    "Nombre": "Pivijay"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 47555,
+    "NOMBRE_MUNICIPIO": "PLATO",
+    "Nombre": "Plato"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 47570,
+    "NOMBRE_MUNICIPIO": "PUEBLO VIEJO",
+    "Nombre": "Pueblo Viejo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47605,
+    "NOMBRE_MUNICIPIO": "REMOLINO",
+    "Nombre": "Remolino"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 47660,
+    "NOMBRE_MUNICIPIO": "SABANAS DE SAN ANGE Sabanas De San Angel"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47675,
+    "NOMBRE_MUNICIPIO": "SALAMINA",
+    "Nombre": "Salamina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 47692,
+    "NOMBRE_MUNICIPIO": "SAN SEBASTIAN DE BUE",
+    "Nombre": "San Sebastian De Buenavista"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 47703,
+    "NOMBRE_MUNICIPIO": "SAN ZENON",
+    "Nombre": "San Zenon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 47707,
+    "NOMBRE_MUNICIPIO": "SANTA ANA",
+    "Nombre": "Santa Ana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 47720,
+    "NOMBRE_MUNICIPIO": "SANTA BARBARA DE PIN",
+    "Nombre": "Santa Barbara De Pinto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "SANTA MARTA",
+    "CODIGO_MUNICIPIO": 47001,
+    "NOMBRE_MUNICIPIO": "SANTA MARTA",
+    "Nombre": "Santa Marta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47745,
+    "NOMBRE_MUNICIPIO": "SITIONUEVO",
+    "Nombre": "Sitionuevo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 47798,
+    "NOMBRE_MUNICIPIO": "TENERIFE",
+    "Nombre": "Tenerife"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "RIO",
+    "CODIGO_MUNICIPIO": 47960,
+    "NOMBRE_MUNICIPIO": "ZAPAYAN",
+    "Nombre": "Zapayan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "MAGDALENA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 47980,
+    "NOMBRE_MUNICIPIO": "ZONA BANANERA",
+    "Nombre": "Zona Bananera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50006,
+    "NOMBRE_MUNICIPIO": "ACACiAS",
+    "Nombre": "Acacias"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50110,
+    "NOMBRE_MUNICIPIO": "BARRANCA DE UPIA",
+    "Nombre": "Barranca De Upia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "RIO META",
+    "CODIGO_MUNICIPIO": 50124,
+    "NOMBRE_MUNICIPIO": "CABUYARO",
+    "Nombre": "Cabuyaro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50150,
+    "NOMBRE_MUNICIPIO": "CASTILLA LA NUEVA",
+    "Nombre": "Castilla La Nueva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50226,
+    "NOMBRE_MUNICIPIO": "CUMARAL",
+    "Nombre": "Cumaral"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50245,
+    "NOMBRE_MUNICIPIO": "EL CALVARIO",
+    "Nombre": "El Calvario"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50251,
+    "NOMBRE_MUNICIPIO": "EL CASTILLO",
+    "Nombre": "El Castillo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50270,
+    "NOMBRE_MUNICIPIO": "EL DORADO",
+    "Nombre": "El Dorado"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50287,
+    "NOMBRE_MUNICIPIO": "FUENTE DE ORO",
+    "Nombre": "Fuente De Oro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50313,
+    "NOMBRE_MUNICIPIO": "GRANADA",
+    "Nombre": "Granada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50318,
+    "NOMBRE_MUNICIPIO": "GUAMAL",
+    "Nombre": "Guamal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50350,
+    "NOMBRE_MUNICIPIO": "LA MACARENA",
+    "Nombre": "La Macarena"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50370,
+    "NOMBRE_MUNICIPIO": "LA URIBE",
+    "Nombre": "La Uribe"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50400,
+    "NOMBRE_MUNICIPIO": "LEJANÍAS",
+    "Nombre": "Lejanías"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50325,
+    "NOMBRE_MUNICIPIO": "MAPIRIPaN",
+    "Nombre": "Mapiripan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50330,
+    "NOMBRE_MUNICIPIO": "MESETAS",
+    "Nombre": "Mesetas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50450,
+    "NOMBRE_MUNICIPIO": "PUERTO CONCORDIA",
+    "Nombre": "Puerto Concordia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "RIO META",
+    "CODIGO_MUNICIPIO": 50568,
+    "NOMBRE_MUNICIPIO": "PUERTO GAITÁN",
+    "Nombre": "Puerto Gaitán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50577,
+    "NOMBRE_MUNICIPIO": "PUERTO LLERAS",
+    "Nombre": "Puerto Lleras"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "RIO META",
+    "CODIGO_MUNICIPIO": 50573,
+    "NOMBRE_MUNICIPIO": "PUERTO LoPEZ",
+    "Nombre": "Puerto Lopez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50590,
+    "NOMBRE_MUNICIPIO": "PUERTO RICO",
+    "Nombre": "Puerto Rico"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50606,
+    "NOMBRE_MUNICIPIO": "RESTREPO",
+    "Nombre": "Restrepo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50680,
+    "NOMBRE_MUNICIPIO": "SAN CARLOS GUAROA",
+    "Nombre": "San Carlos Guaroa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50683,
+    "NOMBRE_MUNICIPIO": "SAN JUAN DE ARAMA",
+    "Nombre": "San Juan De Arama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50686,
+    "NOMBRE_MUNICIPIO": "SAN JUANITO",
+    "Nombre": "San Juanito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50223,
+    "NOMBRE_MUNICIPIO": "SAN LUIS DE CUBARRAL",
+    "Nombre": "San Luis De Cubarral"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "PIEDEMONTE",
+    "CODIGO_MUNICIPIO": 50689,
+    "NOMBRE_MUNICIPIO": "SAN MARTÍN",
+    "Nombre": "San Martín"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "CAPITAL",
+    "CODIGO_MUNICIPIO": 50001,
+    "NOMBRE_MUNICIPIO": "VILLAVICENCIO",
+    "Nombre": "Villavicencio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "META",
+    "PROVINCIA": "ARIARI",
+    "CODIGO_MUNICIPIO": 50711,
+    "NOMBRE_MUNICIPIO": "VISTA HERMOSA",
+    "Nombre": "Vista Hermosa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52019,
+    "NOMBRE_MUNICIPIO": "ALBAN",
+    "Nombre": "Alban"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52022,
+    "NOMBRE_MUNICIPIO": "ALDANA",
+    "Nombre": "Aldana"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52036,
+    "NOMBRE_MUNICIPIO": "ANCUYA",
+    "Nombre": "Ancuya"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52051,
+    "NOMBRE_MUNICIPIO": "ARBOLEDA",
+    "Nombre": "Arboleda"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52079,
+    "NOMBRE_MUNICIPIO": "BARBACOAS",
+    "Nombre": "Barbacoas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52083,
+    "NOMBRE_MUNICIPIO": "BELEN",
+    "Nombre": "Belen"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52110,
+    "NOMBRE_MUNICIPIO": "BUESACO",
+    "Nombre": "Buesaco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52240,
+    "NOMBRE_MUNICIPIO": "CHACHAGUI",
+    "Nombre": "Chachagui"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52203,
+    "NOMBRE_MUNICIPIO": "COLON",
+    "Nombre": "Colon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52207,
+    "NOMBRE_MUNICIPIO": "CONSACA",
+    "Nombre": "Consaca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52210,
+    "NOMBRE_MUNICIPIO": "CONTADERO",
+    "Nombre": "Contadero"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52215,
+    "NOMBRE_MUNICIPIO": "CÓRDOBA",
+    "Nombre": "Córdoba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52224,
+    "NOMBRE_MUNICIPIO": "CUASPUD",
+    "Nombre": "Cuaspud"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52227,
+    "NOMBRE_MUNICIPIO": "CUMBAL",
+    "Nombre": "Cumbal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52233,
+    "NOMBRE_MUNICIPIO": "CUMBITARA",
+    "Nombre": "Cumbitara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52250,
+    "NOMBRE_MUNICIPIO": "EL CHARCO",
+    "Nombre": "El Charco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52254,
+    "NOMBRE_MUNICIPIO": "EL PEÑOL",
+    "Nombre": "El Peñol"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52256,
+    "NOMBRE_MUNICIPIO": "EL ROSARIO",
+    "Nombre": "El Rosario"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52258,
+    "NOMBRE_MUNICIPIO": "El Tablon de Gomez",
+    "Nombre": "El Tablon De Gomez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52260,
+    "NOMBRE_MUNICIPIO": "EL TAMBO",
+    "Nombre": "El Tambo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52520,
+    "NOMBRE_MUNICIPIO": "FRANCISCO PIZARRO",
+    "Nombre": "Francisco Pizarro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52287,
+    "NOMBRE_MUNICIPIO": "FUNES",
+    "Nombre": "Funes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52317,
+    "NOMBRE_MUNICIPIO": "GUACHUCAL",
+    "Nombre": "Guachucal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52320,
+    "NOMBRE_MUNICIPIO": "GUAITARILLA",
+    "Nombre": "Guaitarilla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52323,
+    "NOMBRE_MUNICIPIO": "GUALMATAN",
+    "Nombre": "Gualmatan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52352,
+    "NOMBRE_MUNICIPIO": "ILES",
+    "Nombre": "Iles"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52354,
+    "NOMBRE_MUNICIPIO": "IMUES",
+    "Nombre": "Imues"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52356,
+    "NOMBRE_MUNICIPIO": "IPIALES",
+    "Nombre": "Ipiales"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52378,
+    "NOMBRE_MUNICIPIO": "LA CRUZ",
+    "Nombre": "La Cruz"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52381,
+    "NOMBRE_MUNICIPIO": "LA FLORIDA",
+    "Nombre": "La Florida"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52385,
+    "NOMBRE_MUNICIPIO": "LA LLANADA",
+    "Nombre": "La Llanada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52390,
+    "NOMBRE_MUNICIPIO": "LA TOLA",
+    "Nombre": "La Tola"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52399,
+    "NOMBRE_MUNICIPIO": "LA UNION",
+    "Nombre": "La Union"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52405,
+    "NOMBRE_MUNICIPIO": "LEIVA",
+    "Nombre": "Leiva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52411,
+    "NOMBRE_MUNICIPIO": "LINARES",
+    "Nombre": "Linares"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52418,
+    "NOMBRE_MUNICIPIO": "LOS ANDES",
+    "Nombre": "Los Andes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52427,
+    "NOMBRE_MUNICIPIO": "Magui",
+    "Nombre": "Magui"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52435,
+    "NOMBRE_MUNICIPIO": "MALLAMA",
+    "Nombre": "Mallama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52473,
+    "NOMBRE_MUNICIPIO": "MOSQUERA",
+    "Nombre": "Mosquera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52480,
+    "NOMBRE_MUNICIPIO": "NARIÑO",
+    "Nombre": "Nariño"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52490,
+    "NOMBRE_MUNICIPIO": "OLAYA HERRERA",
+    "Nombre": "Olaya Herrera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52506,
+    "NOMBRE_MUNICIPIO": "OSPINA",
+    "Nombre": "Ospina"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52001,
+    "NOMBRE_MUNICIPIO": "PASTO",
+    "Nombre": "Pasto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52540,
+    "NOMBRE_MUNICIPIO": "POLICARPA",
+    "Nombre": "Policarpa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52560,
+    "NOMBRE_MUNICIPIO": "POTOSÍ",
+    "Nombre": "Potosí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52565,
+    "NOMBRE_MUNICIPIO": "PROVIDENCIA",
+    "Nombre": "Providencia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52573,
+    "NOMBRE_MUNICIPIO": "PUERRES",
+    "Nombre": "Puerres"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 52585,
+    "NOMBRE_MUNICIPIO": "PUPIALES",
+    "Nombre": "Pupiales"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52612,
+    "NOMBRE_MUNICIPIO": "RICAURTE",
+    "Nombre": "Ricaurte"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52621,
+    "NOMBRE_MUNICIPIO": "ROBERTO PAYAN",
+    "Nombre": "Roberto Payan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52678,
+    "NOMBRE_MUNICIPIO": "SAMANIEGO",
+    "Nombre": "Samaniego"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52685,
+    "NOMBRE_MUNICIPIO": "SAN BERNARDO",
+    "Nombre": "San Bernardo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52687,
+    "NOMBRE_MUNICIPIO": "SAN LORENZO",
+    "Nombre": "San Lorenzo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52693,
+    "NOMBRE_MUNICIPIO": "SAN PABLO",
+    "Nombre": "San Pablo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52694,
+    "NOMBRE_MUNICIPIO": "SAN PEDRO DE CARTAG",
+    "Nombre": "San Pedro De Cartago"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52683,
+    "NOMBRE_MUNICIPIO": "SANDONÁ",
+    "Nombre": "Sandoná"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52696,
+    "NOMBRE_MUNICIPIO": "SANTA BaRBARA",
+    "Nombre": "Santa Barbara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52699,
+    "NOMBRE_MUNICIPIO": "SANTA CRUZ",
+    "Nombre": "Santa Cruz"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52720,
+    "NOMBRE_MUNICIPIO": "SAPUYES",
+    "Nombre": "Sapuyes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 52786,
+    "NOMBRE_MUNICIPIO": "TAMINANGO",
+    "Nombre": "Taminango"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52788,
+    "NOMBRE_MUNICIPIO": "TANGUA",
+    "Nombre": "Tangua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "COSTA",
+    "CODIGO_MUNICIPIO": 52835,
+    "NOMBRE_MUNICIPIO": "TUMACO",
+    "Nombre": "Tumaco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO OCCIDENTE",
+    "CODIGO_MUNICIPIO": 52838,
+    "NOMBRE_MUNICIPIO": "TUQUERRES",
+    "Nombre": "Tuquerres"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NARIÑO",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 52885,
+    "NOMBRE_MUNICIPIO": "YACUANQUER",
+    "Nombre": "Yacuanquer"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54003,
+    "NOMBRE_MUNICIPIO": "ABREGO",
+    "Nombre": "Abrego"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 54051,
+    "NOMBRE_MUNICIPIO": "ARBOLEDAS",
+    "Nombre": "Arboledas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR ORIENTE",
+    "CODIGO_MUNICIPIO": 54099,
+    "NOMBRE_MUNICIPIO": "BOCHALEMA",
+    "Nombre": "Bochalema"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 54109,
+    "NOMBRE_MUNICIPIO": "BUCARASICA",
+    "Nombre": "Bucarasica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54128,
+    "NOMBRE_MUNICIPIO": "CACHIRÁ",
+    "Nombre": "Cachirá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54125,
+    "NOMBRE_MUNICIPIO": "CÁCOTA",
+    "Nombre": "Cácota"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR ORIENTE",
+    "CODIGO_MUNICIPIO": 54172,
+    "NOMBRE_MUNICIPIO": "CHINÁCOTA",
+    "Nombre": "Chinácota"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54174,
+    "NOMBRE_MUNICIPIO": "CHITAGÁ",
+    "Nombre": "Chitagá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54206,
+    "NOMBRE_MUNICIPIO": "CONVENCIÓN",
+    "Nombre": "Convención"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "ORIENTAL",
+    "CODIGO_MUNICIPIO": 54001,
+    "NOMBRE_MUNICIPIO": "CÚCUTA",
+    "Nombre": "Cúcuta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 54223,
+    "NOMBRE_MUNICIPIO": "CUCUTILLA",
+    "Nombre": "Cucutilla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR ORIENTE",
+    "CODIGO_MUNICIPIO": 54239,
+    "NOMBRE_MUNICIPIO": "DURANIA",
+    "Nombre": "Durania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54245,
+    "NOMBRE_MUNICIPIO": "EL CARMEN",
+    "Nombre": "El Carmen"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 54250,
+    "NOMBRE_MUNICIPIO": "EL TARRA",
+    "Nombre": "El Tarra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "ORIENTAL",
+    "CODIGO_MUNICIPIO": 54261,
+    "NOMBRE_MUNICIPIO": "EL ZULIA",
+    "Nombre": "El Zulia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 54313,
+    "NOMBRE_MUNICIPIO": "GRAMALOTE",
+    "Nombre": "Gramalote"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54344,
+    "NOMBRE_MUNICIPIO": "HACARÍ",
+    "Nombre": "Hacarí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR ORIENTE",
+    "CODIGO_MUNICIPIO": 54347,
+    "NOMBRE_MUNICIPIO": "HERRÁN",
+    "Nombre": "Herrán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54385,
+    "NOMBRE_MUNICIPIO": "LA ESPERANZA",
+    "Nombre": "La Esperanza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54398,
+    "NOMBRE_MUNICIPIO": "LA PLAYA",
+    "Nombre": "La Playa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR ORIENTE",
+    "CODIGO_MUNICIPIO": 54377,
+    "NOMBRE_MUNICIPIO": "LABATECA",
+    "Nombre": "Labateca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "ORIENTAL",
+    "CODIGO_MUNICIPIO": 54405,
+    "NOMBRE_MUNICIPIO": "LOS PATIOS",
+    "Nombre": "Los Patios"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 54418,
+    "NOMBRE_MUNICIPIO": "LOURDES",
+    "Nombre": "Lourdes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54480,
+    "NOMBRE_MUNICIPIO": "MUTISCUA",
+    "Nombre": "Mutiscua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54498,
+    "NOMBRE_MUNICIPIO": "OCAÑA",
+    "Nombre": "Ocaña"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54518,
+    "NOMBRE_MUNICIPIO": "PAMPLONA",
+    "Nombre": "Pamplona"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54520,
+    "NOMBRE_MUNICIPIO": "PAMPLONITA",
+    "Nombre": "Pamplonita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "ORIENTAL",
+    "CODIGO_MUNICIPIO": 54553,
+    "NOMBRE_MUNICIPIO": "PUERTO SANTANDER",
+    "Nombre": "Puerto Santander"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR ORIENTE",
+    "CODIGO_MUNICIPIO": 54599,
+    "NOMBRE_MUNICIPIO": "RAGONVALIA",
+    "Nombre": "Ragonvalia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 54660,
+    "NOMBRE_MUNICIPIO": "SALAZAR",
+    "Nombre": "Salazar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54670,
+    "NOMBRE_MUNICIPIO": "SAN CALIXTO",
+    "Nombre": "San Calixto"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "ORIENTAL",
+    "CODIGO_MUNICIPIO": 54673,
+    "NOMBRE_MUNICIPIO": "SAN CAYETANO",
+    "Nombre": "San Cayetano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 54680,
+    "NOMBRE_MUNICIPIO": "SANTIAGO",
+    "Nombre": "Santiago"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 54720,
+    "NOMBRE_MUNICIPIO": "SARDINATA",
+    "Nombre": "Sardinata"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54743,
+    "NOMBRE_MUNICIPIO": "SILOS",
+    "Nombre": "Silos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 54800,
+    "NOMBRE_MUNICIPIO": "TEORAMA",
+    "Nombre": "Teorama"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 54810,
+    "NOMBRE_MUNICIPIO": "TIBÚ",
+    "Nombre": "Tibú"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "SUR ORIENTE",
+    "CODIGO_MUNICIPIO": 54820,
+    "NOMBRE_MUNICIPIO": "TOLEDO",
+    "Nombre": "Toledo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 54871,
+    "NOMBRE_MUNICIPIO": "VILLA CARO",
+    "Nombre": "Villa Caro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDE",
+    "PROVINCIA": "ORIENTAL",
+    "CODIGO_MUNICIPIO": 54874,
+    "NOMBRE_MUNICIPIO": "VILLA DEL ROSARIO",
+    "Nombre": "Villa Del Rosario"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86219,
+    "NOMBRE_MUNICIPIO": "COLÓN",
+    "Nombre": "Colón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86001,
+    "NOMBRE_MUNICIPIO": "MOCOA",
+    "Nombre": "Mocoa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86320,
+    "NOMBRE_MUNICIPIO": "ORITO",
+    "Nombre": "Orito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86568,
+    "NOMBRE_MUNICIPIO": "PUERTO ASIS",
+    "Nombre": "Puerto Asis"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86569,
+    "NOMBRE_MUNICIPIO": "PUERTO CAICEDO",
+    "Nombre": "Puerto Caicedo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86571,
+    "NOMBRE_MUNICIPIO": "PUERTO GUZMAN",
+    "Nombre": "Puerto Guzman"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86573,
+    "NOMBRE_MUNICIPIO": "PUERTO LEGUIZAMO",
+    "Nombre": "Puerto Leguizamo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86755,
+    "NOMBRE_MUNICIPIO": "SAN FRANCISCO",
+    "Nombre": "San Francisco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86757,
+    "NOMBRE_MUNICIPIO": "SAN MIGUEL",
+    "Nombre": "San Miguel"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86760,
+    "NOMBRE_MUNICIPIO": "SANTIAGO",
+    "Nombre": "Santiago"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86749,
+    "NOMBRE_MUNICIPIO": "SIBUNDOY",
+    "Nombre": "Sibundoy"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86865,
+    "NOMBRE_MUNICIPIO": "VALLE DEL GUAMUEZ",
+    "Nombre": "Valle Del Guamuez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "PUTUMAYO",
+    "PROVINCIA": "PUTUMAYO",
+    "CODIGO_MUNICIPIO": 86885,
+    "NOMBRE_MUNICIPIO": "VILLA GARZON",
+    "Nombre": "Villa Garzon"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "CAPITAL",
+    "CODIGO_MUNICIPIO": 63001,
+    "NOMBRE_MUNICIPIO": "ARMENIA",
+    "Nombre": "Armenia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "CAPITAL",
+    "CODIGO_MUNICIPIO": 63111,
+    "NOMBRE_MUNICIPIO": "BUENAVISTA",
+    "Nombre": "Buenavista"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "CAPITAL",
+    "CODIGO_MUNICIPIO": 63130,
+    "NOMBRE_MUNICIPIO": "CALARCA",
+    "Nombre": "Calarca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 63190,
+    "NOMBRE_MUNICIPIO": "CIRCASIA",
+    "Nombre": "Circasia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "CORDILLERANOS",
+    "CODIGO_MUNICIPIO": 63212,
+    "NOMBRE_MUNICIPIO": "CoRDOBA",
+    "Nombre": "Cordoba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "FRIA",
+    "CODIGO_MUNICIPIO": 63272,
+    "NOMBRE_MUNICIPIO": "FILANDIA",
+    "Nombre": "Filandia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "CORDILLERANOS",
+    "CODIGO_MUNICIPIO": 63302,
+    "NOMBRE_MUNICIPIO": "GeNOVA",
+    "Nombre": "Genova"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "VALLE",
+    "CODIGO_MUNICIPIO": 63401,
+    "NOMBRE_MUNICIPIO": "LA TEBAIDA",
+    "Nombre": "La Tebaida"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "VALLE",
+    "CODIGO_MUNICIPIO": 63470,
+    "NOMBRE_MUNICIPIO": "Montengro",
+    "Nombre": "Montengro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "CORDILLERANOS",
+    "CODIGO_MUNICIPIO": 63548,
+    "NOMBRE_MUNICIPIO": "PIJAO",
+    "Nombre": "Pijao"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "VALLE",
+    "CODIGO_MUNICIPIO": 63594,
+    "NOMBRE_MUNICIPIO": "QUIMBAYA",
+    "Nombre": "Quimbaya"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "QUINDIO",
+    "PROVINCIA": "FRIA",
+    "CODIGO_MUNICIPIO": 63690,
+    "NOMBRE_MUNICIPIO": "SALENTO",
+    "Nombre": "Salento"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "DOS - VERTIENTE OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 66045,
+    "NOMBRE_MUNICIPIO": "APÍA",
+    "Nombre": "Apía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "DOS - VERTIENTE OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 66075,
+    "NOMBRE_MUNICIPIO": "BALBOA",
+    "Nombre": "Balboa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "DOS - VERTIENTE OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 66088,
+    "NOMBRE_MUNICIPIO": "BELÉN DE UMBRÍA",
+    "Nombre": "Belén De Umbría"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "UNO - VERTIENTE ORIENTAL",
+    "CODIGO_MUNICIPIO": 66170,
+    "NOMBRE_MUNICIPIO": "DOSQUEBRADAS",
+    "Nombre": "Dosquebradas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "DOS - VERTIENTE OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 66318,
+    "NOMBRE_MUNICIPIO": "GUÁTICA",
+    "Nombre": "Guática"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "DOS - VERTIENTE OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 66383,
+    "NOMBRE_MUNICIPIO": "LA CELIA",
+    "Nombre": "La Celia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "UNO - VERTIENTE ORIENTAL",
+    "CODIGO_MUNICIPIO": 66400,
+    "NOMBRE_MUNICIPIO": "LA VIRGINIA",
+    "Nombre": "La Virginia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "UNO - VERTIENTE ORIENTAL",
+    "CODIGO_MUNICIPIO": 66440,
+    "NOMBRE_MUNICIPIO": "MARSELLA",
+    "Nombre": "Marsella"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "TRES - VERTIENTE DEL PACIFICO",
+    "CODIGO_MUNICIPIO": 66456,
+    "NOMBRE_MUNICIPIO": "MISTRATÓ",
+    "Nombre": "Mistrató"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "UNO - VERTIENTE ORIENTAL",
+    "CODIGO_MUNICIPIO": 66001,
+    "NOMBRE_MUNICIPIO": "PEREIRA",
+    "Nombre": "Pereira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "TRES - VERTIENTE DEL PACIFICO",
+    "CODIGO_MUNICIPIO": 66572,
+    "NOMBRE_MUNICIPIO": "PUEBLO RICO",
+    "Nombre": "Pueblo Rico"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "DOS - VERTIENTE OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 66594,
+    "NOMBRE_MUNICIPIO": "QUINCHiA",
+    "Nombre": "Quinchia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "UNO - VERTIENTE ORIENTAL",
+    "CODIGO_MUNICIPIO": 66682,
+    "NOMBRE_MUNICIPIO": "SANTA ROSA DE CABAL Santa Rosa De Cabal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "RISARALDA",
+    "PROVINCIA": "DOS - VERTIENTE OCCIDENTAL",
+    "CODIGO_MUNICIPIO": 66687,
+    "NOMBRE_MUNICIPIO": "SANTUARIO",
+    "Nombre": "Santuario"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68013,
+    "NOMBRE_MUNICIPIO": "AGUADA",
+    "Nombre": "Aguada"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68020,
+    "NOMBRE_MUNICIPIO": "ALBANIA",
+    "Nombre": "Albania"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68051,
+    "NOMBRE_MUNICIPIO": "ARATOCA",
+    "Nombre": "Aratoca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68077,
+    "NOMBRE_MUNICIPIO": "BARBOSA",
+    "Nombre": "Barbosa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68079,
+    "NOMBRE_MUNICIPIO": "BARICHARA",
+    "Nombre": "Barichara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "MARES",
+    "CODIGO_MUNICIPIO": 68081,
+    "NOMBRE_MUNICIPIO": "BARRANCABERMEJA",
+    "Nombre": "Barrancabermeja"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "MARES",
+    "CODIGO_MUNICIPIO": 68092,
+    "NOMBRE_MUNICIPIO": "BETULIA",
+    "Nombre": "Betulia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68101,
+    "NOMBRE_MUNICIPIO": "BOLÍVAR",
+    "Nombre": "Bolívar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68001,
+    "NOMBRE_MUNICIPIO": "BUCARAMANGA",
+    "Nombre": "Bucaramanga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68121,
+    "NOMBRE_MUNICIPIO": "CABRERA",
+    "Nombre": "Cabrera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68132,
+    "NOMBRE_MUNICIPIO": "CALIFORNIA",
+    "Nombre": "California"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68147,
+    "NOMBRE_MUNICIPIO": "CAPITANEJO",
+    "Nombre": "Capitanejo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68152,
+    "NOMBRE_MUNICIPIO": "CARCASÍ",
+    "Nombre": "Carcasí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68160,
+    "NOMBRE_MUNICIPIO": "CEPITÁ",
+    "Nombre": "Cepitá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68162,
+    "NOMBRE_MUNICIPIO": "CERRITO",
+    "Nombre": "Cerrito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68167,
+    "NOMBRE_MUNICIPIO": "CHARALÁ",
+    "Nombre": "Charalá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68169,
+    "NOMBRE_MUNICIPIO": "CHARTA",
+    "Nombre": "Charta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68176,
+    "NOMBRE_MUNICIPIO": "CHIMA",
+    "Nombre": "Chima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68179,
+    "NOMBRE_MUNICIPIO": "CHIPATÁ",
+    "Nombre": "Chipatá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68190,
+    "NOMBRE_MUNICIPIO": "CIMITARRA",
+    "Nombre": "Cimitarra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68207,
+    "NOMBRE_MUNICIPIO": "CONCEPCIÓN",
+    "Nombre": "Concepción"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68209,
+    "NOMBRE_MUNICIPIO": "CONFINES",
+    "Nombre": "Confines"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68211,
+    "NOMBRE_MUNICIPIO": "CONTRATACIÓN",
+    "Nombre": "Contratación"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68217,
+    "NOMBRE_MUNICIPIO": "COROMORO",
+    "Nombre": "Coromoro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68229,
+    "NOMBRE_MUNICIPIO": "CURITÍ",
+    "Nombre": "Curití"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "MARES",
+    "CODIGO_MUNICIPIO": 68235,
+    "NOMBRE_MUNICIPIO": "EL CARMEN DE CHUCUR",
+    "Nombre": "El Carmen De Chucurí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68245,
+    "NOMBRE_MUNICIPIO": "EL GUACAMAYO",
+    "Nombre": "El Guacamayo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68250,
+    "NOMBRE_MUNICIPIO": "EL PEÑÓN",
+    "Nombre": "El Peñón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68255,
+    "NOMBRE_MUNICIPIO": "EL PLAYÓN",
+    "Nombre": "El Playón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68264,
+    "NOMBRE_MUNICIPIO": "ENCINO",
+    "Nombre": "Encino"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68266,
+    "NOMBRE_MUNICIPIO": "ENCISO",
+    "Nombre": "Enciso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68271,
+    "NOMBRE_MUNICIPIO": "FLORIÁN",
+    "Nombre": "Florián"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68276,
+    "NOMBRE_MUNICIPIO": "FLORIDABLANCA",
+    "Nombre": "Floridablanca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68296,
+    "NOMBRE_MUNICIPIO": "GALÁN",
+    "Nombre": "Galán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68298,
+    "NOMBRE_MUNICIPIO": "GAMBITA",
+    "Nombre": "Gambita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68307,
+    "NOMBRE_MUNICIPIO": "GIRÓN",
+    "Nombre": "Girón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68318,
+    "NOMBRE_MUNICIPIO": "GUACA",
+    "Nombre": "Guaca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68320,
+    "NOMBRE_MUNICIPIO": "GUADALUPE",
+    "Nombre": "Guadalupe"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68322,
+    "NOMBRE_MUNICIPIO": "GUAPOTÁ",
+    "Nombre": "Guapotá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68324,
+    "NOMBRE_MUNICIPIO": "GUAVATÁ",
+    "Nombre": "Guavatá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68327,
+    "NOMBRE_MUNICIPIO": "GuEPSA",
+    "Nombre": "Guepsa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68344,
+    "NOMBRE_MUNICIPIO": "HATO",
+    "Nombre": "Hato"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68368,
+    "NOMBRE_MUNICIPIO": "JESÚS MARÍA",
+    "Nombre": "Jesús María"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68370,
+    "NOMBRE_MUNICIPIO": "JORDÁN",
+    "Nombre": "Jordán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68377,
+    "NOMBRE_MUNICIPIO": "LA BELLEZA",
+    "Nombre": "La Belleza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68397,
+    "NOMBRE_MUNICIPIO": "LA PAZ",
+    "Nombre": "La Paz"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68385,
+    "NOMBRE_MUNICIPIO": "LANDÁZURI",
+    "Nombre": "Landázuri"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68406,
+    "NOMBRE_MUNICIPIO": "LEBRÍJA",
+    "Nombre": "Lebríja"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68418,
+    "NOMBRE_MUNICIPIO": "LOS SANTOS",
+    "Nombre": "Los Santos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68425,
+    "NOMBRE_MUNICIPIO": "MACARAVITA",
+    "Nombre": "Macaravita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68432,
+    "NOMBRE_MUNICIPIO": "MÁLAGA",
+    "Nombre": "Málaga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68444,
+    "NOMBRE_MUNICIPIO": "MATANZA",
+    "Nombre": "Matanza"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68464,
+    "NOMBRE_MUNICIPIO": "MOGOTES",
+    "Nombre": "Mogotes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68468,
+    "NOMBRE_MUNICIPIO": "MOLAGAVITA",
+    "Nombre": "Molagavita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68498,
+    "NOMBRE_MUNICIPIO": "OCAMONTE",
+    "Nombre": "Ocamonte"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68500,
+    "NOMBRE_MUNICIPIO": "OIBA",
+    "Nombre": "Oiba"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68502,
+    "NOMBRE_MUNICIPIO": "ONZAGA",
+    "Nombre": "Onzaga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68522,
+    "NOMBRE_MUNICIPIO": "PALMAR",
+    "Nombre": "Palmar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68524,
+    "NOMBRE_MUNICIPIO": "PALMAS DEL SOCORRO Palmas Del Socorro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68533,
+    "NOMBRE_MUNICIPIO": "PÁRAMO",
+    "Nombre": "Páramo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68547,
+    "NOMBRE_MUNICIPIO": "PIEDECUESTA",
+    "Nombre": "Piedecuesta"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68549,
+    "NOMBRE_MUNICIPIO": "PINCHOTE",
+    "Nombre": "Pinchote"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68572,
+    "NOMBRE_MUNICIPIO": "PUENTE NACIONAL",
+    "Nombre": "Puente Nacional"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68573,
+    "NOMBRE_MUNICIPIO": "PUERTO PARRA",
+    "Nombre": "Puerto Parra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "MARES",
+    "CODIGO_MUNICIPIO": 68575,
+    "NOMBRE_MUNICIPIO": "PUERTO WILCHES",
+    "Nombre": "Puerto Wilches"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68615,
+    "NOMBRE_MUNICIPIO": "RIONEGRO",
+    "Nombre": "Rionegro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "MARES",
+    "CODIGO_MUNICIPIO": 68655,
+    "NOMBRE_MUNICIPIO": "SABANA DE TORRES",
+    "Nombre": "Sabana De Torres"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68669,
+    "NOMBRE_MUNICIPIO": "SAN ANDRÉS",
+    "Nombre": "San Andrés"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68673,
+    "NOMBRE_MUNICIPIO": "SAN BENITO",
+    "Nombre": "San Benito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68679,
+    "NOMBRE_MUNICIPIO": "SAN GIL",
+    "Nombre": "San Gil"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68682,
+    "NOMBRE_MUNICIPIO": "SAN JOAQUÍN",
+    "Nombre": "San Joaquín"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68684,
+    "NOMBRE_MUNICIPIO": "SAN JOSÉ DE MIRANDA",
+    "Nombre": "San José De Miranda"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GARCIA ROVIRA",
+    "CODIGO_MUNICIPIO": 68686,
+    "NOMBRE_MUNICIPIO": "SAN MIGUEL",
+    "Nombre": "San Miguel"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "MARES",
+    "CODIGO_MUNICIPIO": 68689,
+    "NOMBRE_MUNICIPIO": "SAN VICENTE DE CHUCU",
+    "Nombre": "San Vicente De Chucurí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68705,
+    "NOMBRE_MUNICIPIO": "SANTA BÁRBARA",
+    "Nombre": "Santa Bárbara"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68720,
+    "NOMBRE_MUNICIPIO": "SANTA HELENA DEL OPÓ",
+    "Nombre": "Santa Helena Del Opón"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68745,
+    "NOMBRE_MUNICIPIO": "SIMACOTA",
+    "Nombre": "Simacota"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68755,
+    "NOMBRE_MUNICIPIO": "SOCORRO",
+    "Nombre": "Socorro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "COMUNERA",
+    "CODIGO_MUNICIPIO": 68770,
+    "NOMBRE_MUNICIPIO": "SUAITA",
+    "Nombre": "Suaita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68773,
+    "NOMBRE_MUNICIPIO": "SUCRE",
+    "Nombre": "Sucre"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68780,
+    "NOMBRE_MUNICIPIO": "SURATA",
+    "Nombre": "Surata"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68820,
+    "NOMBRE_MUNICIPIO": "TONA",
+    "Nombre": "Tona"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68855,
+    "NOMBRE_MUNICIPIO": "VALLE DE SAN JOSÉ",
+    "Nombre": "Valle De San José"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "VELEZ",
+    "CODIGO_MUNICIPIO": 68861,
+    "NOMBRE_MUNICIPIO": "VÉLEZ",
+    "Nombre": "Vélez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "SOTO",
+    "CODIGO_MUNICIPIO": 68867,
+    "NOMBRE_MUNICIPIO": "VETAS",
+    "Nombre": "Vetas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "GUANENTA",
+    "CODIGO_MUNICIPIO": 68872,
+    "NOMBRE_MUNICIPIO": "VILLANUEVA",
+    "Nombre": "Villanueva"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SANTANDER",
+    "PROVINCIA": "MARES",
+    "CODIGO_MUNICIPIO": 68895,
+    "NOMBRE_MUNICIPIO": "ZAPATOCA",
+    "Nombre": "Zapatoca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70110,
+    "NOMBRE_MUNICIPIO": "BUENAVISTA",
+    "Nombre": "Buenavista"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 70124,
+    "NOMBRE_MUNICIPIO": "CAIMITO",
+    "Nombre": "Caimito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 70230,
+    "NOMBRE_MUNICIPIO": "CHALÁN",
+    "Nombre": "Chalán"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 70204,
+    "NOMBRE_MUNICIPIO": "COLOSO",
+    "Nombre": "Coloso"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70215,
+    "NOMBRE_MUNICIPIO": "COROZAL",
+    "Nombre": "Corozal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MORROSQUILLO",
+    "CODIGO_MUNICIPIO": 70221,
+    "NOMBRE_MUNICIPIO": "COVEÑAS",
+    "Nombre": "Coveñas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70233,
+    "NOMBRE_MUNICIPIO": "EL ROBLE",
+    "Nombre": "El Roble"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70235,
+    "NOMBRE_MUNICIPIO": "GALERAS",
+    "Nombre": "Galeras"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MOJANA",
+    "CODIGO_MUNICIPIO": 70265,
+    "NOMBRE_MUNICIPIO": "GUARANDA",
+    "Nombre": "Guaranda"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 70400,
+    "NOMBRE_MUNICIPIO": "LA UNIÓN",
+    "Nombre": "La Unión"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70418,
+    "NOMBRE_MUNICIPIO": "LOS PALMITOS",
+    "Nombre": "Los Palmitos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MOJANA",
+    "CODIGO_MUNICIPIO": 70429,
+    "NOMBRE_MUNICIPIO": "MAJAGUAL",
+    "Nombre": "Majagual"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 70473,
+    "NOMBRE_MUNICIPIO": "MORROA",
+    "Nombre": "Morroa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 70508,
+    "NOMBRE_MUNICIPIO": "OVEJAS",
+    "Nombre": "Ovejas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MORROSQUILLO",
+    "CODIGO_MUNICIPIO": 70523,
+    "NOMBRE_MUNICIPIO": "PALMITO",
+    "Nombre": "Palmito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70670,
+    "NOMBRE_MUNICIPIO": "SAMPUÉS",
+    "Nombre": "Sampués"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 70678,
+    "NOMBRE_MUNICIPIO": "SAN BENITO ABAD",
+    "Nombre": "San Benito Abad"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70702,
+    "NOMBRE_MUNICIPIO": "SAN JUAN BETULIA",
+    "Nombre": "San Juan Betulia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SAN JORGE",
+    "CODIGO_MUNICIPIO": 70708,
+    "NOMBRE_MUNICIPIO": "SAN MARCOS",
+    "Nombre": "San Marcos"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MORROSQUILLO",
+    "CODIGO_MUNICIPIO": 70713,
+    "NOMBRE_MUNICIPIO": "SAN ONOFRE",
+    "Nombre": "San Onofre"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70717,
+    "NOMBRE_MUNICIPIO": "SAN PEDRO",
+    "Nombre": "San Pedro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MORROSQUILLO",
+    "CODIGO_MUNICIPIO": 70820,
+    "NOMBRE_MUNICIPIO": "SANTIAGO DE TOLÚ",
+    "Nombre": "Santiago De Tolú"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "SABANAS",
+    "CODIGO_MUNICIPIO": 70742,
+    "NOMBRE_MUNICIPIO": "SINCÉ",
+    "Nombre": "Sincé"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MONTES DE MARIA",
+    "CODIGO_MUNICIPIO": 70001,
+    "NOMBRE_MUNICIPIO": "SINCELEJO",
+    "Nombre": "Sincelejo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MOJANA",
+    "CODIGO_MUNICIPIO": 70771,
+    "NOMBRE_MUNICIPIO": "SUCRE",
+    "Nombre": "Sucre"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "SUCRE",
+    "PROVINCIA": "MORROSQUILLO",
+    "CODIGO_MUNICIPIO": 70823,
+    "NOMBRE_MUNICIPIO": "TOLÚ VIEJO",
+    "Nombre": "Tolú Viejo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SURORIENTE",
+    "CODIGO_MUNICIPIO": 73024,
+    "NOMBRE_MUNICIPIO": "ALPUJARRA",
+    "Nombre": "Alpujarra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73026,
+    "NOMBRE_MUNICIPIO": "ALVARADO",
+    "Nombre": "Alvarado"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 73030,
+    "NOMBRE_MUNICIPIO": "AMBALEMA",
+    "Nombre": "Ambalema"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73043,
+    "NOMBRE_MUNICIPIO": "ANZOÁTEGUI",
+    "Nombre": "Anzoátegui"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 73055,
+    "NOMBRE_MUNICIPIO": "ARMERO",
+    "Nombre": "Armero"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73067,
+    "NOMBRE_MUNICIPIO": "ATACO",
+    "Nombre": "Ataco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73124,
+    "NOMBRE_MUNICIPIO": "CAJAMARCA",
+    "Nombre": "Cajamarca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 73148,
+    "NOMBRE_MUNICIPIO": "CARMEN DE APICALÁ",
+    "Nombre": "Carmen De Apicalá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73152,
+    "NOMBRE_MUNICIPIO": "CASABIANCA",
+    "Nombre": "Casabianca"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73168,
+    "NOMBRE_MUNICIPIO": "CHAPARRAL",
+    "Nombre": "Chaparral"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73200,
+    "NOMBRE_MUNICIPIO": "COELLO",
+    "Nombre": "Coello"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73217,
+    "NOMBRE_MUNICIPIO": "COYAIMA",
+    "Nombre": "Coyaima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 73226,
+    "NOMBRE_MUNICIPIO": "CUNDAY",
+    "Nombre": "Cunday"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SURORIENTE",
+    "CODIGO_MUNICIPIO": 73236,
+    "NOMBRE_MUNICIPIO": "DOLORES",
+    "Nombre": "Dolores"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73268,
+    "NOMBRE_MUNICIPIO": "ESPINAL",
+    "Nombre": "Espinal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 73270,
+    "NOMBRE_MUNICIPIO": "FALAN",
+    "Nombre": "Falan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73275,
+    "NOMBRE_MUNICIPIO": "FLANDES",
+    "Nombre": "Flandes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 73283,
+    "NOMBRE_MUNICIPIO": "FRESNO",
+    "Nombre": "Fresno"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SURORIENTE",
+    "CODIGO_MUNICIPIO": 73319,
+    "NOMBRE_MUNICIPIO": "GUAMO",
+    "Nombre": "Guamo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73347,
+    "NOMBRE_MUNICIPIO": "HERVEO",
+    "Nombre": "Herveo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 73349,
+    "NOMBRE_MUNICIPIO": "HONDA",
+    "Nombre": "Honda"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73001,
+    "NOMBRE_MUNICIPIO": "IBAGUe",
+    "Nombre": "Ibague"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 73352,
+    "NOMBRE_MUNICIPIO": "ICONONZO",
+    "Nombre": "Icononzo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73408,
+    "NOMBRE_MUNICIPIO": "LeRIDA",
+    "Nombre": "Lerida"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73411,
+    "NOMBRE_MUNICIPIO": "LiBANO",
+    "Nombre": "Libano"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 73443,
+    "NOMBRE_MUNICIPIO": "MARIQUITA",
+    "Nombre": "Mariquita"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 73449,
+    "NOMBRE_MUNICIPIO": "MELGAR",
+    "Nombre": "Melgar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73461,
+    "NOMBRE_MUNICIPIO": "MURILLO",
+    "Nombre": "Murillo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73483,
+    "NOMBRE_MUNICIPIO": "NATAGAIMA",
+    "Nombre": "Natagaima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73504,
+    "NOMBRE_MUNICIPIO": "ORTEGA",
+    "Nombre": "Ortega"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 73520,
+    "NOMBRE_MUNICIPIO": "PALOCABILDO",
+    "Nombre": "Palocabildo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73547,
+    "NOMBRE_MUNICIPIO": "PIEDRAS",
+    "Nombre": "Piedras"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73555,
+    "NOMBRE_MUNICIPIO": "PLANADAS",
+    "Nombre": "Planadas"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SURORIENTE",
+    "CODIGO_MUNICIPIO": 73563,
+    "NOMBRE_MUNICIPIO": "PRADO",
+    "Nombre": "Prado"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SURORIENTE",
+    "CODIGO_MUNICIPIO": 73585,
+    "NOMBRE_MUNICIPIO": "PURIFICACIÓN",
+    "Nombre": "Purificación"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73616,
+    "NOMBRE_MUNICIPIO": "RIOBLANCO",
+    "Nombre": "Rioblanco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73622,
+    "NOMBRE_MUNICIPIO": "RONCESVALLES",
+    "Nombre": "Roncesvalles"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73624,
+    "NOMBRE_MUNICIPIO": "ROVIRA",
+    "Nombre": "Rovira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SURORIENTE",
+    "CODIGO_MUNICIPIO": 73671,
+    "NOMBRE_MUNICIPIO": "SALDAÑA",
+    "Nombre": "Saldaña"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 73675,
+    "NOMBRE_MUNICIPIO": "SAN ANTONIO",
+    "Nombre": "San Antonio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73678,
+    "NOMBRE_MUNICIPIO": "SAN LUIS",
+    "Nombre": "San Luis"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73686,
+    "NOMBRE_MUNICIPIO": "SANTA ISABEL",
+    "Nombre": "Santa Isabel"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "SURORIENTE",
+    "CODIGO_MUNICIPIO": 73770,
+    "NOMBRE_MUNICIPIO": "SUÁREZ",
+    "Nombre": "Suárez"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "IBAGUE",
+    "CODIGO_MUNICIPIO": 73854,
+    "NOMBRE_MUNICIPIO": "VALLE DE SAN JUAN",
+    "Nombre": "Valle De San Juan"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73861,
+    "NOMBRE_MUNICIPIO": "VENADILLO",
+    "Nombre": "Venadillo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "NEVADOS",
+    "CODIGO_MUNICIPIO": 73870,
+    "NOMBRE_MUNICIPIO": "VILLAHERMOSA",
+    "Nombre": "Villahermosa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "TOLIMA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 73873,
+    "NOMBRE_MUNICIPIO": "VILLARRICA",
+    "Nombre": "Villarrica"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76020,
+    "NOMBRE_MUNICIPIO": "ALCALa",
+    "Nombre": "Alcala"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76036,
+    "NOMBRE_MUNICIPIO": "ANDALUCÍA",
+    "Nombre": "Andalucía"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76041,
+    "NOMBRE_MUNICIPIO": "ANSERMANUEVO",
+    "Nombre": "Ansermanuevo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76054,
+    "NOMBRE_MUNICIPIO": "ARGELIA",
+    "Nombre": "Argelia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76100,
+    "NOMBRE_MUNICIPIO": "BOLÍVAR",
+    "Nombre": "Bolívar"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "OCCIDENTE",
+    "CODIGO_MUNICIPIO": 76109,
+    "NOMBRE_MUNICIPIO": "BUENAVENTURA",
+    "Nombre": "Buenaventura"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76111,
+    "NOMBRE_MUNICIPIO": "BUGA",
+    "Nombre": "Buga"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76113,
+    "NOMBRE_MUNICIPIO": "BUGALAGRANDE",
+    "Nombre": "Bugalagrande"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 76122,
+    "NOMBRE_MUNICIPIO": "CAICEDONIA",
+    "Nombre": "Caicedonia"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76001,
+    "NOMBRE_MUNICIPIO": "CALI",
+    "Nombre": "Cali"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76126,
+    "NOMBRE_MUNICIPIO": "CALIMA",
+    "Nombre": "Calima"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76130,
+    "NOMBRE_MUNICIPIO": "CANDELARIA",
+    "Nombre": "Candelaria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76147,
+    "NOMBRE_MUNICIPIO": "CARTAGO",
+    "Nombre": "Cartago"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76233,
+    "NOMBRE_MUNICIPIO": "DAGUA",
+    "Nombre": "Dagua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76243,
+    "NOMBRE_MUNICIPIO": "EL ÁGUILA",
+    "Nombre": "El Águila"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76246,
+    "NOMBRE_MUNICIPIO": "EL CAIRO",
+    "Nombre": "El Cairo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76248,
+    "NOMBRE_MUNICIPIO": "EL CERRITO",
+    "Nombre": "El Cerrito"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76250,
+    "NOMBRE_MUNICIPIO": "EL DOVIO",
+    "Nombre": "El Dovio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76275,
+    "NOMBRE_MUNICIPIO": "FLORIDA",
+    "Nombre": "Florida"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76306,
+    "NOMBRE_MUNICIPIO": "GINEBRA",
+    "Nombre": "Ginebra"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76318,
+    "NOMBRE_MUNICIPIO": "GUACARÍ",
+    "Nombre": "Guacarí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76364,
+    "NOMBRE_MUNICIPIO": "JAMUNDÍ",
+    "Nombre": "Jamundí"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76377,
+    "NOMBRE_MUNICIPIO": "LA CUMBRE",
+    "Nombre": "La Cumbre"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76400,
+    "NOMBRE_MUNICIPIO": "LA UNIÓN",
+    "Nombre": "La Unión"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76403,
+    "NOMBRE_MUNICIPIO": "LA VICTORIA",
+    "Nombre": "La Victoria"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76497,
+    "NOMBRE_MUNICIPIO": "OBANDO",
+    "Nombre": "Obando"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76520,
+    "NOMBRE_MUNICIPIO": "PALMIRA",
+    "Nombre": "Palmira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76563,
+    "NOMBRE_MUNICIPIO": "PRADERA",
+    "Nombre": "Pradera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76606,
+    "NOMBRE_MUNICIPIO": "RESTREPO",
+    "Nombre": "Restrepo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76616,
+    "NOMBRE_MUNICIPIO": "RIOFRIO",
+    "Nombre": "Riofrio"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76622,
+    "NOMBRE_MUNICIPIO": "ROLDANILLO",
+    "Nombre": "Roldanillo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76670,
+    "NOMBRE_MUNICIPIO": "SAN PEDRO",
+    "Nombre": "San Pedro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "ORIENTE",
+    "CODIGO_MUNICIPIO": 76736,
+    "NOMBRE_MUNICIPIO": "SEVILLA",
+    "Nombre": "Sevilla"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76823,
+    "NOMBRE_MUNICIPIO": "TORO",
+    "Nombre": "Toro"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76828,
+    "NOMBRE_MUNICIPIO": "TRUJILLO",
+    "Nombre": "Trujillo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76834,
+    "NOMBRE_MUNICIPIO": "TULUÁ",
+    "Nombre": "Tuluá"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76845,
+    "NOMBRE_MUNICIPIO": "ULLOA",
+    "Nombre": "Ulloa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76863,
+    "NOMBRE_MUNICIPIO": "VERSALLES",
+    "Nombre": "Versalles"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76869,
+    "NOMBRE_MUNICIPIO": "VIJES",
+    "Nombre": "Vijes"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "CENTRO",
+    "CODIGO_MUNICIPIO": 76890,
+    "NOMBRE_MUNICIPIO": "YOTOCO",
+    "Nombre": "Yotoco"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "SUR",
+    "CODIGO_MUNICIPIO": 76892,
+    "NOMBRE_MUNICIPIO": "YUMBO",
+    "Nombre": "Yumbo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA",
+    "PROVINCIA": "NORTE",
+    "CODIGO_MUNICIPIO": 76895,
+    "NOMBRE_MUNICIPIO": "ZARZAL",
+    "Nombre": "Zarzal"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VAUPES",
+    "PROVINCIA": "VAUPES",
+    "CODIGO_MUNICIPIO": 97161,
+    "NOMBRE_MUNICIPIO": "CARURU",
+    "Nombre": "Caruru"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VAUPES",
+    "PROVINCIA": "VAUPES",
+    "CODIGO_MUNICIPIO": 97001,
+    "NOMBRE_MUNICIPIO": "MITÚ",
+    "Nombre": "Mitú"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VAUPES",
+    "PROVINCIA": "VAUPES",
+    "CODIGO_MUNICIPIO": 97511,
+    "NOMBRE_MUNICIPIO": "PACOA",
+    "Nombre": "Pacoa"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VAUPES",
+    "PROVINCIA": "VAUPES",
+    "CODIGO_MUNICIPIO": 97777,
+    "NOMBRE_MUNICIPIO": "PAPUNAHUA",
+    "Nombre": "Papunahua"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VAUPES",
+    "PROVINCIA": "VAUPES",
+    "CODIGO_MUNICIPIO": 97666,
+    "NOMBRE_MUNICIPIO": "TARAIRA",
+    "Nombre": "Taraira"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VAUPES",
+    "PROVINCIA": "VAUPES",
+    "CODIGO_MUNICIPIO": 97889,
+    "NOMBRE_MUNICIPIO": "YAVARATÉ",
+    "Nombre": "Yavaraté"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VICHADA",
+    "PROVINCIA": "VICHADA",
+    "CODIGO_MUNICIPIO": 99773,
+    "NOMBRE_MUNICIPIO": "CUMARIBO",
+    "Nombre": "Cumaribo"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VICHADA",
+    "PROVINCIA": "VICHADA",
+    "CODIGO_MUNICIPIO": 99524,
+    "NOMBRE_MUNICIPIO": "LA PRIMAVERA",
+    "Nombre": "La Primavera"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VICHADA",
+    "PROVINCIA": "VICHADA",
+    "CODIGO_MUNICIPIO": 99001,
+    "NOMBRE_MUNICIPIO": "PUERTO CARREÑO",
+    "Nombre": "Puerto Carreño"
+  },
+  {
+    "NOMBRE_DEPARTAMENTO": "VICHADA",
+    "PROVINCIA": "VICHADA",
+    "CODIGO_MUNICIPIO": 99624,
+    "NOMBRE_MUNICIPIO": "SANTA ROSALÍA",
+    "Nombre": "Santa Rosalía"
+  }
+]
+
+export default municipies
