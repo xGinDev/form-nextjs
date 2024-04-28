@@ -9,29 +9,30 @@ import countries from '../../data/countriesPhoneCodes';
 import colombiaMunicipios  from '../../data/colombiaMunicipiosDane';
 import {useState} from "react";
 
+interface Municipio {
+    CODIGO_MUNICIPIO: string;
+    NOMBRE_DEPARTAMENTO: string;
+    NOMBRE_MUNICIPIO: string;
+}
+
 export default function FormNew() {
-    const [selectedDepartment, setSelectedDepartment] = useState('Default');
-    const [selectedCity, setSelectedCity] = useState('Default');
+    const [selectedDepartamento, setSelectedDepartamento] = useState<string>('');
+    const [municipios, setMunicipios] = useState<Municipio[]>([]);
 
-    const departmentChangeHandler = (event: any) => {
-        setSelectedDepartment(event.target?.value);
-        setSelectedCity('Default'); // Resetear la ciudad seleccionada al cambiar el departamento
+    const handleDepartamentoChange = (e: any) => {
+        const departamento = e.target?.value;
+        setSelectedDepartamento(departamento);
+
+        // Filtrar los municipios por departamento seleccionado
+        const municipiosFiltrados = colombiaMunicipios.filter(
+            (municipio: any) => municipio.NOMBRE_DEPARTAMENTO === departamento
+        );
+        setMunicipios(municipiosFiltrados);
     };
-
-    const cityChangeHandler = (event: any) => {
-        setSelectedCity(event.target?.value);
-    };
-
-    const citiesInSelectedDepartment = colombiaMunicipios
-        ?.filter(city => city.NOMBRE_DEPARTAMENTO === selectedDepartment)
-        ?.map(city => city.NOMBRE_MUNICIPIO) || [];
-
-    const selectedCityData = colombiaMunicipios.find(city => city.NOMBRE_MUNICIPIO === selectedCity);
 
     const data = useStoreData();
 
-    // Filtrar departamentos únicos
-    const uniqueDepartments = Array.from(new Set(colombiaMunicipios.map(city => city.NOMBRE_DEPARTAMENTO)));
+    console.log('colombiaMunicipios', colombiaMunicipios)
 
     return (
         <div>
@@ -113,7 +114,7 @@ export default function FormNew() {
                             </Label>
                             <Select>
                                 <SelectTrigger>
-                                    <SelectValue placeholder="Selecciona tu país" />
+                                    <SelectValue placeholder="Selecciona tu país"/>
                                 </SelectTrigger>
                                 <SelectContent>
                                     {countries.map(country => (
@@ -131,7 +132,7 @@ export default function FormNew() {
                             <Input
                                 className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
                                 id="name"
-                                type={'email'}
+                                type={'number'}
                                 placeholder="Ingresa tu celular"
                                 required
                             />
@@ -140,50 +141,46 @@ export default function FormNew() {
                     <div className="grid grid-cols-3 gap-4">
                         <div className="space-y-2">
                             <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
-                                * Select Country
+                                * Selecciona tu país
                             </Label>
                             <Input
                                 className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
                                 id="name"
-                                placeholder="Select Country"
+                                placeholder="Selecciona tu país"
                                 required
                             />
                         </div>
                         <div className="space-y-2">
                             <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
-                                * Select Department
+                                * Selecciona tu departamento
                             </Label>
-                            <Select onValueChange={departmentChangeHandler}>
+                            <Select  value={selectedDepartamento} onValueChange={handleDepartamentoChange}>
                                 <SelectTrigger>
-                                    <SelectValue placeholder="Selecciona tu departamento" />
+                                    <SelectValue placeholder="Selecciona tu departamento"/>
                                 </SelectTrigger>
                                 <SelectContent>
-                                    <SelectItem key="default" value="default">
-                                        Selecciona tu departamento
-                                    </SelectItem>
-                                    {uniqueDepartments.map(department => (
-                                        <SelectItem key={department} value={department}>
-                                            {department}
-                                        </SelectItem>
-                                    ))}
+                                    {Array.from(new Set(colombiaMunicipios.map((municipio: any) => municipio.NOMBRE_DEPARTAMENTO))).map(
+                                        (departamento: string, index: number) => (
+                                            <SelectItem key={index} value={departamento}>
+                                                {departamento}
+                                            </SelectItem>
+                                        )
+                                    )}
                                 </SelectContent>
                             </Select>
                         </div>
                         <div className="space-y-2">
                             <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
-                                * Select City
+                                * Selecciona tu ciudad
                             </Label>
-                            <Select onValueChange={cityChangeHandler}>
+                            <Select>
                                 <SelectTrigger>
-                                    <SelectValue placeholder="Selecciona tu ciudad" />
+                                    <SelectValue placeholder="Selecciona tu ciudad"/>
                                 </SelectTrigger>
                                 <SelectContent>
-                                    <SelectItem key="default" value="default">
-                                        Selecciona tu ciudad
-                                    </SelectItem>
-                                    {citiesInSelectedDepartment.map(city => (
-                                        <SelectItem key={city} value={city}>
-                                            {city}
+                                    {municipios.map((municipio: any, index: number) => (
+                                        <SelectItem key={index} value={municipio.NOMBRE_MUNICIPIO}>
+                                            {municipio.NOMBRE_MUNICIPIO}
                                         </SelectItem>
                                     ))}
                                 </SelectContent>
@@ -201,20 +198,17 @@ export default function FormNew() {
                             required
                         />
                     </div>
-                    {selectedCityData && (
-                        <div className="space-y-2">
-                            <label className="text-gray-600 dark:text-gray-400 required" htmlFor="dane">
-                                * Código DANE
-                            </label>
-                            <input
-                                className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
-                                id="dane"
-                                value={selectedCityData.CODIGO_MUNICIPIO}
-                                readOnly
-                                required
-                            />
-                        </div>
-                    )}
+                    <div className="space-y-2">
+                        <label className="text-gray-600 dark:text-gray-400 required" htmlFor="dane">
+                            * Código DANE
+                        </label>
+                        <input
+                            className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                            id="dane"
+                            readOnly
+                            required
+                        />
+                    </div>
                     <Button
                         className="w-full bg-gray-300 dark:bg-gray-700 text-black dark:text-white hover:text-white"
                         type="submit">
