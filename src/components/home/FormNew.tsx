@@ -9,15 +9,9 @@ import countries from '../../data/countriesPhoneCodes';
 import colombiaMunicipios  from '../../data/colombiaMunicipiosDane';
 import {useState} from "react";
 
-interface Municipio {
-    CODIGO_MUNICIPIO: string;
-    NOMBRE_DEPARTAMENTO: string;
-    NOMBRE_MUNICIPIO: string;
-}
-
 export default function FormNew() {
     const [selectedDepartamento, setSelectedDepartamento] = useState<string>('');
-    const [municipios, setMunicipios] = useState<Municipio[]>([]);
+    const [municipios, setMunicipios] = useState<any[]>([]);
 
     const handleDepartamentoChange = (e: any) => {
         const departamento = e.target?.value;
@@ -32,7 +26,8 @@ export default function FormNew() {
 
     const data = useStoreData();
 
-    console.log('colombiaMunicipios', colombiaMunicipios)
+    console.log('selectedDepartamento', selectedDepartamento)
+    console.log('municipios', municipios)
 
     return (
         <div>
@@ -154,11 +149,11 @@ export default function FormNew() {
                             <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
                                 * Selecciona tu departamento
                             </Label>
-                            <Select  value={selectedDepartamento} onValueChange={handleDepartamentoChange}>
+                            <Select>
                                 <SelectTrigger>
                                     <SelectValue placeholder="Selecciona tu departamento"/>
                                 </SelectTrigger>
-                                <SelectContent>
+                                <SelectContent defaultValue={selectedDepartamento} onChange={handleDepartamentoChange}>
                                     {Array.from(new Set(colombiaMunicipios.map((municipio: any) => municipio.NOMBRE_DEPARTAMENTO))).map(
                                         (departamento: string, index: number) => (
                                             <SelectItem key={index} value={departamento}>
