@@ -11,10 +11,12 @@ import {useState} from "react";
 
 export default function FormNew() {
     const [selectedDepartamento, setSelectedDepartamento] = useState<string>('');
+    const [selectedMunicipio, setSelectedMunicipio] = useState<any>(null);
     const [municipios, setMunicipios] = useState<any[]>([]);
+    const [codigoDane, setCodigoDane] = useState<string>("");
 
     const handleDepartamentoChange = (e: any) => {
-        const departamento = e.target?.value;
+        const departamento = e;
         setSelectedDepartamento(departamento);
 
         // Filtrar los municipios por departamento seleccionado
@@ -24,10 +26,24 @@ export default function FormNew() {
         setMunicipios(municipiosFiltrados);
     };
 
-    const data = useStoreData();
+    const handleMunicipioChange = (e: any) => {
+        const municipio = e;
+        setSelectedMunicipio(municipio);
 
-    console.log('selectedDepartamento', selectedDepartamento)
-    console.log('municipios', municipios)
+        // Encuentra el código DANE del municipio seleccionado
+        const municipioSeleccionado = colombiaMunicipios.find(
+            (m: any) => m.NOMBRE_MUNICIPIO === municipio
+        );
+        if (municipioSeleccionado) {
+            setCodigoDane(municipioSeleccionado.CODIGO_MUNICIPIO.toString());
+        }
+    };
+
+    console.log('Departamento', selectedDepartamento);
+    console.log('Municipio', selectedMunicipio);
+    console.log('Código DANE', codigoDane);
+
+    const data = useStoreData();
 
     return (
         <div>
@@ -105,11 +121,11 @@ export default function FormNew() {
                     <div className="grid grid-cols-2 gap-4">
                         <div className="space-y-2">
                             <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="phone-code">
-                                * Selecciona tu país
+                                * Elige el código de tu país
                             </Label>
                             <Select>
                                 <SelectTrigger>
-                                    <SelectValue placeholder="Selecciona tu país"/>
+                                    <SelectValue placeholder="Elige tu país"/>
                                 </SelectTrigger>
                                 <SelectContent>
                                     {countries.map(country => (
@@ -136,24 +152,26 @@ export default function FormNew() {
                     <div className="grid grid-cols-3 gap-4">
                         <div className="space-y-2">
                             <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
-                                * Selecciona tu país
-                            </Label>
-                            <Input
-                                className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
-                                id="name"
-                                placeholder="Selecciona tu país"
-                                required
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
-                                * Selecciona tu departamento
+                                * Elige tu país
                             </Label>
                             <Select>
                                 <SelectTrigger>
-                                    <SelectValue placeholder="Selecciona tu departamento"/>
+                                    <SelectValue placeholder="Elige tu país" />
                                 </SelectTrigger>
-                                <SelectContent defaultValue={selectedDepartamento} onChange={handleDepartamentoChange}>
+                                <SelectContent>
+                                    <SelectItem value="Colombia">Colombia</SelectItem>
+                                </SelectContent>
+                            </Select>
+                        </div>
+                        <div className="space-y-2">
+                            <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
+                                * Elige tu departamento
+                            </Label>
+                            <Select defaultValue={selectedDepartamento} onValueChange={handleDepartamentoChange}>
+                                <SelectTrigger>
+                                    <SelectValue placeholder="Elige tu departamento"/>
+                                </SelectTrigger>
+                                <SelectContent>
                                     {Array.from(new Set(colombiaMunicipios.map((municipio: any) => municipio.NOMBRE_DEPARTAMENTO))).map(
                                         (departamento: string, index: number) => (
                                             <SelectItem key={index} value={departamento}>
@@ -166,11 +184,11 @@ export default function FormNew() {
                         </div>
                         <div className="space-y-2">
                             <Label className="text-gray-600 dark:text-gray-400 required" htmlFor="name">
-                                * Selecciona tu ciudad
+                                * Elige tu ciudad
                             </Label>
-                            <Select>
+                            <Select onValueChange={handleMunicipioChange}>
                                 <SelectTrigger>
-                                    <SelectValue placeholder="Selecciona tu ciudad"/>
+                                    <SelectValue placeholder="Elige tu ciudad"/>
                                 </SelectTrigger>
                                 <SelectContent>
                                     {municipios.map((municipio: any, index: number) => (
@@ -195,11 +213,12 @@ export default function FormNew() {
                     </div>
                     <div className="space-y-2">
                         <label className="text-gray-600 dark:text-gray-400 required" htmlFor="dane">
-                            * Código DANE
+                            * Código DANE {}
                         </label>
                         <input
                             className="border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
                             id="dane"
+                            value={codigoDane}
                             readOnly
                             required
                         />
