@@ -21,6 +21,7 @@ import Image from "next/image";
 import { useStoreData } from '@/hooks/data'
 import {useState} from "react";
 import FormNew from "@/components/home/FormNew";
+import { BiArrowBack } from "react-icons/bi";
 
 export default function Form() {
     // const [identification, setIndentification] = useState('')
@@ -45,9 +46,14 @@ export default function Form() {
         // }
     }
 
+    const handleBackForm = () => {
+        setRegister(false)
+    }
+
     return (
         <div key="1" className="border-1 dark:border-gray-300 p-8 rounded-md shadow-md space-y-8 relative">
-            <div className="space-y-2">
+            <div className="space-y-2 flex items-center gap-4">
+                {register && <div className="mt-[8px]" onClick={handleBackForm}><BiArrowBack/></div>}
                 <h2 className="text-3xl font-bold">{data?.portalTittle}</h2>
             </div>
             {
